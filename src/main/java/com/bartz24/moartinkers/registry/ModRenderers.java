@@ -51,6 +51,8 @@ public class ModRenderers {
 			mapFluidState(ModMaterials.matLudicrite.getFluid());
 		if (ModMaterials.matQuartzIron != null)
 			mapFluidState(ModMaterials.matQuartzIron.getFluid());
+		if (ModMaterials.matEnchMetal != null)
+			mapFluidState(ModMaterials.matEnchMetal.getFluid());
 	}
 
 	private static void mapFluidState(Fluid fluid) {

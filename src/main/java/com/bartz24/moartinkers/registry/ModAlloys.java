@@ -15,7 +15,7 @@ public class ModAlloys {
 		registerAlloy("signalum*144", "redstone*250", "copper*108", "silver*36");
 		registerAlloy("lumium*144", "glowstone*250", "tin*108", "silver*36");
 		registerAlloy("invar*3", "iron*2", "nickel*1");
-		if (!Loader.isModLoaded("ImmersiveEngineering"))
+		if (!Loader.isModLoaded("immersiveengineering"))
 			registerAlloy("constantan*2", "copper*1", "nickel*1");
 		registerAlloy("enderium*144", "tin*72", "silver*36", "platinum*36", "ender*250", "pyrotheum*125");
 	}

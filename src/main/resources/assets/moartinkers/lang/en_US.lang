@@ -31,6 +31,11 @@ material.draconium.name=Draconium
 material.wyverndraconium.name=Wyvern Draconium
 material.awakeneddraconium.name=Awakened Draconium
 material.chaoticdraconium.name=Chaotic Draconium
+material.magicalwood.name=Magical Wood
+material.enchantedmetal.name=Enchanted Metal
+
+modifier.moarwritable.name=Moar Writable
+modifier.moarwritable.desc=§aThe power of enchanting magically gave 2 times as much space to expand!
 
 fluid.enderium.name=Molten Enderium
 fluid.platinum.name=Molten Platinum
@@ -51,3 +56,4 @@ fluid.cyanite.name=Molten Cyanite
 fluid.blutonium.name=Molten Blutonium
 fluid.ludicrite.name=Molten Ludicrite
 fluid.quartzenrichediron.name=Molten Quartz Enriched Iron
+fluid.enchantedmetal.name=Molten Enchanted Metal

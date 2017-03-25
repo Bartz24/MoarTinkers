@@ -1,8 +1,10 @@
 package com.bartz24.moartinkers.registry;
 
 import com.bartz24.moartinkers.MaterialIntegrationNoDust;
+import com.bartz24.moartinkers.traits.TraitMoarWritable;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
@@ -15,6 +17,7 @@ import slimeknights.tconstruct.library.materials.ExtraMaterialStats;
 import slimeknights.tconstruct.library.materials.HandleMaterialStats;
 import slimeknights.tconstruct.library.materials.HeadMaterialStats;
 import slimeknights.tconstruct.library.materials.Material;
+import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.utils.HarvestLevels;
 import slimeknights.tconstruct.shared.TinkerFluids;
 
@@ -59,6 +62,9 @@ public class ModMaterials {
 	public static Material matAwaDraconium;
 	public static Material matChaDraconium;
 
+	public static Material matEnchMetal;
+	public static Material matMagWood;
+
 	public static void preInit() {
 		FluidRegistry.enableUniversalBucket();
 
@@ -90,7 +96,7 @@ public class ModMaterials {
 		TinkerRegistry.addMaterialStats(matLumium, new HeadMaterialStats(600, 9.60f, 9.34f, HarvestLevels.OBSIDIAN),
 				new HandleMaterialStats(0.44f, 90), new ExtraMaterialStats(20), new BowMaterialStats(2.89f, 2.36f, 9f));
 
-		if (!Loader.isModLoaded("ImmersiveEngineering")) {
+		if (!Loader.isModLoaded("immersiveengineering")) {
 			matConstantan = ingotMaterial("Constantan", 0xD9B34A, 500);
 			TinkerRegistry.addMaterialStats(matConstantan,
 					new HeadMaterialStats(300, 4.45f, 5.03f, HarvestLevels.DIAMOND),
@@ -132,7 +138,7 @@ public class ModMaterials {
 					new BowMaterialStats(0.98f, 1.09f, 4f));
 		}
 
-		if (Loader.isModLoaded("Botania")) {
+		if (Loader.isModLoaded("Botania") && !Loader.isModLoaded("botanicaladdons")) {
 			matManasteel = ingotMaterial("Manasteel", 0x62E1F5, 500);
 			TinkerRegistry.addMaterialStats(matManasteel,
 					new HeadMaterialStats(400, 6.21f, 3.87f, HarvestLevels.DIAMOND),
@@ -263,7 +269,7 @@ public class ModMaterials {
 			matAwaDraconium.setCraftable(true);
 			matAwaDraconium.setRepresentativeItem(awaCore);
 			TinkerIntegration.integrate(matAwaDraconium).integrate();
-			TinkerRegistry.addMaterialStats(matAwaDraconium, new HeadMaterialStats(2000, 19.64f, 21.52f, 6),
+			TinkerRegistry.addMaterialStats(matAwaDraconium, new HeadMaterialStats(2000, 25.43f, 29.52f, 6),
 					new HandleMaterialStats(3.12f, 800), new ExtraMaterialStats(600),
 					new BowMaterialStats(5.60f, 3.76f, 20f));
 
@@ -276,6 +282,27 @@ public class ModMaterials {
 			TinkerRegistry.addMaterialStats(matChaDraconium, new HeadMaterialStats(3000, 32.73f, 50.76f, 7),
 					new HandleMaterialStats(5.31f, 1200), new ExtraMaterialStats(1000),
 					new BowMaterialStats(8.96f, 5.14f, 40f));
+		}
+
+		if (Loader.isModLoaded("extrautils2")) {
+			Item magWood = Item.REGISTRY.getObject(new ResourceLocation("extrautils2", "decorativesolidwood"));
+			matMagWood = new Material("magicalwood", 0xB7C752);
+			matMagWood.addItem(new ItemStack(magWood, 1, 1), 1, Material.VALUE_Ingot);
+			matMagWood.setCraftable(true);
+			matMagWood.setRepresentativeItem(new ItemStack(magWood, 1, 1));
+			matMagWood.addTrait(new TraitMoarWritable(1));
+			matMagWood.addTrait(new TraitMoarWritable(2), MaterialTypes.HEAD);
+			TinkerIntegration.integrate(matMagWood).integrate();
+			TinkerRegistry.addMaterialStats(matMagWood, new HeadMaterialStats(120, 1.23f, 1.65f, HarvestLevels.STONE),
+					new HandleMaterialStats(0.78f, 10), new ExtraMaterialStats(20),
+					new BowMaterialStats(0.96f, 0.87f, 0.5f));
+
+			matEnchMetal = ingotMaterial("EnchantedMetal", 0x80F222, 1500);
+			matEnchMetal.addTrait(new TraitMoarWritable(1));
+			matEnchMetal.addTrait(new TraitMoarWritable(2), MaterialTypes.HEAD);
+			TinkerRegistry.addMaterialStats(matEnchMetal,
+					new HeadMaterialStats(360, 7.53f, 8.52f, HarvestLevels.COBALT), new HandleMaterialStats(1.25f, 80),
+					new ExtraMaterialStats(50), new BowMaterialStats(1.12f, 1.35f, 6f));
 		}
 	}
 

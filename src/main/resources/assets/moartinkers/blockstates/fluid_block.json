@@ -54,6 +54,9 @@
         }],
         "quartzenrichediron": [{
             "custom": { "fluid": "quartzenrichediron" }
+        }],
+        "enchantedmetal": [{
+            "custom": { "fluid": "enchantedmetal" }
         }]
     }
 }
