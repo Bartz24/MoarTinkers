@@ -1,0 +1,16 @@
+[
+{
+  "modid": "moartinkers",
+  "name": "Moar Tinkers",
+  "description": "Adds moar tinker materials!",
+  "version": "0.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Bartz24"],
+  "credits": "Boni for Tinkers Construct 2",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,59 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:fluid"
+    },
+    "variants": {
+        "enderium": [{
+            "custom": { "fluid": "enderium" }
+        }],
+        "platinum": [{
+            "custom": { "fluid": "platinum" }
+        }],
+        "iridium": [{
+            "custom": { "fluid": "iridium" }
+        }],
+        "mithril": [{
+            "custom": { "fluid": "mithril" }
+        }],
+        "signalum": [{
+            "custom": { "fluid": "signalum" }
+        }],
+        "lumium": [{
+            "custom": { "fluid": "lumium" }
+        }],
+        "invar": [{
+            "custom": { "fluid": "invar" }
+        }],
+        "constantan": [{
+            "custom": { "fluid": "constantan" }
+        }],
+        "refinedobsidian": [{
+            "custom": { "fluid": "refinedobsidian" }
+        }],
+        "refinedglowstone": [{
+            "custom": { "fluid": "refinedglowstone" }
+        }],
+        "osmium": [{
+            "custom": { "fluid": "osmium" }
+        }],
+        "manasteel": [{
+            "custom": { "fluid": "manasteel" }
+        }],
+        "terrasteel": [{
+            "custom": { "fluid": "terrasteel" }
+        }],
+        "elementium": [{
+            "custom": { "fluid": "elementium" }
+        }],
+        "blutonium": [{
+            "custom": { "fluid": "blutonium" }
+        }],
+        "ludicrite": [{
+            "custom": { "fluid": "ludicrite" }
+        }],
+        "quartzenrichediron": [{
+            "custom": { "fluid": "quartzenrichediron" }
+        }]
+    }
+}
