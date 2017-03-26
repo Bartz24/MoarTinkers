@@ -43,8 +43,11 @@
         "terrasteel": [{
             "custom": { "fluid": "terrasteel" }
         }],
-        "elementium": [{
-            "custom": { "fluid": "elementium" }
+        "elvenelementium": [{
+            "custom": { "fluid": "elvenelementium" }
+        }],
+        "gaia": [{
+            "custom": { "fluid": "gaia" }
         }],
         "blutonium": [{
             "custom": { "fluid": "blutonium" }
@@ -57,6 +60,36 @@
         }],
         "enchantedmetal": [{
             "custom": { "fluid": "enchantedmetal" }
+        }],
+        "electrumflux": [{
+            "custom": { "fluid": "electrumflux" }
+        }],
+        "psi": [{
+            "custom": { "fluid": "psi" }
+        }],
+        "ivorypsi": [{
+            "custom": { "fluid": "ivorypsi" }
+        }],
+        "ebonypsi": [{
+            "custom": { "fluid": "ebonypsi" }
+        }],
+        "titanium": [{
+            "custom": { "fluid": "titanium" }
+        }],
+        "tungsten": [{
+            "custom": { "fluid": "tungsten" }
+        }],
+        "tungstensteel": [{
+            "custom": { "fluid": "tungstensteel" }
+        }],
+        "chrome": [{
+            "custom": { "fluid": "chrome" }
+        }],
+        "refinediron": [{
+            "custom": { "fluid": "refinediron" }
+        }],
+        "advancedalloy": [{
+            "custom": { "fluid": "advancedalloy" }
         }]
     }
 }

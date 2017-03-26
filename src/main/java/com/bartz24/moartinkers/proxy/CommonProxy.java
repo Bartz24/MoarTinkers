@@ -3,11 +3,10 @@ package com.bartz24.moartinkers.proxy;
 import com.bartz24.moartinkers.registry.ModAlloys;
 import com.bartz24.moartinkers.registry.ModMaterials;
 
+import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.oredict.OreDictionary;
-import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
 public class CommonProxy
 {
@@ -33,5 +32,10 @@ public class CommonProxy
 	public void postInit(FMLPostInitializationEvent e)
 	{
 		//ModCrafting.init();
+	}
+	
+	public void registerFluidModel(Fluid fluid)
+	{
+		
 	}
 }

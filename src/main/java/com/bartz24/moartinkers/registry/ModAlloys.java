@@ -18,6 +18,7 @@ public class ModAlloys {
 		if (!Loader.isModLoaded("immersiveengineering"))
 			registerAlloy("constantan*2", "copper*1", "nickel*1");
 		registerAlloy("enderium*144", "tin*72", "silver*36", "platinum*36", "ender*250", "pyrotheum*125");
+		registerAlloy("electrumflux*144", "electrum*144", "redstone*500");
 	}
 
 	public static void registerAlloy(String out, String... in) {

@@ -1,11 +1,10 @@
 package com.bartz24.moartinkers;
 
 import net.minecraftforge.fluids.Fluid;
-import slimeknights.tconstruct.library.MaterialIntegration;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
-public class MaterialIntegrationNoDust extends MaterialIntegration {
+public class MaterialIntegrationNoDust extends MoarMaterialIntegration {
 	public MaterialIntegrationNoDust(Material material) {
 		super(material, null);
 	}

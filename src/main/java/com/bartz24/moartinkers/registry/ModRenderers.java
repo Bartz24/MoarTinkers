@@ -16,46 +16,7 @@ import net.minecraftforge.fluids.Fluid;
 
 public class ModRenderers {
 
-	public static void preInit() {
-		if (ModMaterials.matEnderium != null)
-			mapFluidState(ModMaterials.matEnderium.getFluid());
-		if (ModMaterials.matPlatinum != null)
-			mapFluidState(ModMaterials.matPlatinum.getFluid());
-		if (ModMaterials.matIridium != null)
-			mapFluidState(ModMaterials.matIridium.getFluid());
-		if (ModMaterials.matMithril != null)
-			mapFluidState(ModMaterials.matMithril.getFluid());
-		if (ModMaterials.matSignalum != null)
-			mapFluidState(ModMaterials.matSignalum.getFluid());
-		if (ModMaterials.matLumium != null)
-			mapFluidState(ModMaterials.matLumium.getFluid());
-		if (ModMaterials.matInvar != null)
-			mapFluidState(ModMaterials.matInvar.getFluid());
-		if (ModMaterials.matConstantan != null)
-			mapFluidState(ModMaterials.matConstantan.getFluid());
-		if (ModMaterials.matRefGlowstone != null)
-			mapFluidState(ModMaterials.matRefGlowstone.getFluid());
-		if (ModMaterials.matRefObsidian != null)
-			mapFluidState(ModMaterials.matRefObsidian.getFluid());
-		if (ModMaterials.matOsmium != null)
-			mapFluidState(ModMaterials.matOsmium.getFluid());
-		if (ModMaterials.matManasteel != null)
-			mapFluidState(ModMaterials.matManasteel.getFluid());
-		if (ModMaterials.matTerrasteel != null)
-			mapFluidState(ModMaterials.matTerrasteel.getFluid());
-		if (ModMaterials.matElementium != null)
-			mapFluidState(ModMaterials.matElementium.getFluid());
-		if (ModMaterials.matBlutonium != null)
-			mapFluidState(ModMaterials.matBlutonium.getFluid());
-		if (ModMaterials.matLudicrite != null)
-			mapFluidState(ModMaterials.matLudicrite.getFluid());
-		if (ModMaterials.matQuartzIron != null)
-			mapFluidState(ModMaterials.matQuartzIron.getFluid());
-		if (ModMaterials.matEnchMetal != null)
-			mapFluidState(ModMaterials.matEnchMetal.getFluid());
-	}
-
-	private static void mapFluidState(Fluid fluid) {
+	public static void mapFluidState(Fluid fluid) {
 		Block block = fluid.getBlock();
 		Item item = Item.getItemFromBlock(block);
 		FluidStateMapper mapper = new FluidStateMapper(fluid);
