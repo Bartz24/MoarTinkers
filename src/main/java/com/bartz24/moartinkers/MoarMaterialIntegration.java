@@ -17,19 +17,19 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 	private boolean toolforge;
 
 	public MoarMaterialIntegration(Material material) {
-		super(material, null);
+		this(material, null);
 	}
 
 	public MoarMaterialIntegration(Material material, Fluid fluid) {
-		super(null, material, fluid, null);
+		this(null, material, fluid, null);
 	}
 
 	public MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix) {
-		super("ingot" + oreSuffix, material, fluid, oreSuffix);
+		this("ingot" + oreSuffix, material, fluid, oreSuffix);
 	}
 
 	public MoarMaterialIntegration(String oreRequirement, Material material, Fluid fluid, String oreSuffix) {
-		super(material, fluid, oreSuffix, oreRequirement);
+		this(material, fluid, oreSuffix, oreRequirement);
 	}
 
 	public MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix, String... oreRequirement) {
@@ -42,29 +42,35 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 		TinkerFluids.registerMoltenBlock(fluid);
 		MoarTinkers.proxy.registerFluidModel(fluid);
 	}
+	
+	public void integrate()
+	{
+		integrate(false);
+	}
 
-	public void integrate() {
+	public void integrate(boolean force) {
 		if (integrated) {
 			return;
 		}
 
-		if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
-			int found = 0;
-			for (String ore : OreDictionary.getOreNames()) {
-				for (int i = 0; i < oreRequirement.length; i++) {
-					if (oreRequirement[i].equals(ore)) {
-						if(OreDictionary.getOres(ore).size() > 0)
-						{
-						if (++found == oreRequirement.length) {
-							break;
-						}
+		if (!force) {
+			if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
+				int found = 0;
+				for (String ore : OreDictionary.getOreNames()) {
+					for (int i = 0; i < oreRequirement.length; i++) {
+						if (oreRequirement[i].equals(ore)) {
+							if (OreDictionary.getOres(ore).size() > 0) {
+								if (++found == oreRequirement.length) {
+									break;
+								}
+							}
 						}
 					}
 				}
-			}
-			// prerequisite not fulfilled
-			if (found < oreRequirement.length) {
-				return;
+				// prerequisite not fulfilled
+				if (found < oreRequirement.length) {
+					return;
+				}
 			}
 		}
 
