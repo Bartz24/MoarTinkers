@@ -1,9 +1,9 @@
 package com.bartz24.moartinkers.proxy;
 
+import com.bartz24.moartinkers.config.ConfigOptions;
 import com.bartz24.moartinkers.registry.ModAlloys;
 import com.bartz24.moartinkers.registry.ModMaterials;
 import com.bartz24.moartinkers.registry.ModTraits;
-import com.bartz24.moartinkers.traits.TraitOP;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.Fluid;
@@ -17,7 +17,7 @@ public class CommonProxy
 
 	public void preInit(FMLPreInitializationEvent e)
 	{
-	//	ConfigOptions.loadConfigThenSave(e);
+		ConfigOptions.loadConfigThenSave(e);
 		//ModBlocks.init();
 		//ModItems.init();
 		new ModTraits();

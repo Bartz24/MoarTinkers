@@ -28,7 +28,7 @@ repositories {
     }
 }
 
-version = "0.4.0"
+version = "0.4.1"
 group= "com.bartz24.moartinkers" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "moartinkers"
 
@@ -38,7 +38,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.10.2-12.18.3.2221"
+    version = "1.10.2-12.18.3.2297"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -52,7 +52,7 @@ minecraft {
 
 dependencies {
     deobfCompile "slimeknights.mantle:Mantle:1.10.2-1.1.5.205"
-    deobfCompile "slimeknights:TConstruct:1.10.2-2.6.3.500"
+    deobfCompile "slimeknights:TConstruct:1.10.2-2.6.5.9"
 	
 	compile files("lib/Botania r1.9-341.jar")
 	compile files("lib/Psi-r1.0-42.jar")
