@@ -62,14 +62,14 @@ public class TraitEnderMagnetic extends AbstractTrait {
 						new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 				int pulled = 0;
 				for (EntityItem item : items) {
-					if (item.getEntityItem() == null || item.getEntityItem().getItem() == null || item.isDead) {
+					if (item.getItem().isEmpty() || item.isDead) {
 						continue;
 					}
 
 					if (pulled > 200) {
 						break;
 					}
-					entity.world.spawnEntity(new EntityItem(entity.world, x, y, z, item.getEntityItem()));
+					entity.world.spawnEntity(new EntityItem(entity.world, x, y, z, item.getItem()));
 					entity.world.removeEntity(item);
 					pulled++;
 				}

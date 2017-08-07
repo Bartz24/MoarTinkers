@@ -1,6 +1,8 @@
 package com.bartz24.moartinkers;
 
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.oredict.OreDictionary;
+import slimeknights.tconstruct.common.config.Config;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
@@ -26,9 +28,21 @@ public class MaterialIntegrationNoDust extends MoarMaterialIntegration {
 	}
 	
 	public void integrateRecipes() {
-	    if(!isIntegrated()) {
-	      return;
-	    }
+		if (integrated) {
+			return;
+		}
+
+		if (!force) {
+			if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
+				for (String ore : oreRequirement) {
+					if (OreDictionary.getOres(ore, false).isEmpty()) {
+						return;
+					}
+				}
+			}
+		}
+		integrated = true;
+		
 	    // register melting and casting
 	    if(fluid != null && oreSuffix != null) {
 	      RandomHelper.noDustRegisterOredictMeltingCasting(fluid, oreSuffix);

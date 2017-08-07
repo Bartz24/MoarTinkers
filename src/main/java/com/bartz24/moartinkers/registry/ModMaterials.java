@@ -1,7 +1,9 @@
 package com.bartz24.moartinkers.registry;
 
+import com.bartz24.moartinkers.MaterialIntegrationExists;
 import com.bartz24.moartinkers.MaterialIntegrationNoDust;
 import com.bartz24.moartinkers.MoarMaterialIntegration;
+import com.bartz24.moartinkers.RandomHelper;
 import com.bartz24.moartinkers.config.ConfigOptions;
 
 import net.minecraft.item.Item;
@@ -10,7 +12,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Loader;
-import slimeknights.tconstruct.TinkerIntegration;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.BowMaterialStats;
 import slimeknights.tconstruct.library.materials.BowStringMaterialStats;
@@ -109,7 +110,7 @@ public class ModMaterials {
 		FluidRegistry.enableUniversalBucket();
 
 		if (ConfigOptions.materialIsAllowed("enderium")) {
-			matEnderium = ingotMaterialNoDust("Enderium", 0x006E61, 1200);
+			matEnderium = ingotMaterial("Enderium", 0x006E61, 1200);
 			matEnderium.addTrait(TinkerTraits.enderference);
 			matEnderium.addTrait(ModTraits.enderMagnetic, MaterialTypes.HEAD);
 			TinkerRegistry.addMaterialStats(matEnderium,
@@ -291,7 +292,7 @@ public class ModMaterials {
 					new HandleMaterialStats(1.63f, 260), new ExtraMaterialStats(180),
 					new BowMaterialStats(1.54f, 6.45f, 15f));
 		}
-		if (Loader.isModLoaded("EnderIO")) {
+		if (Loader.isModLoaded("enderio")) {
 
 			if (ConfigOptions.materialIsAllowed("electricalsteel")) {
 				matElecSteel = ingotMaterialExist(FluidRegistry.getFluid("electricalsteel"), "ElectricalSteel",
@@ -409,7 +410,7 @@ public class ModMaterials {
 				matQuartzIron.addItem(quartzIron, 1, Material.VALUE_Ingot);
 				matQuartzIron.setCastable(true);
 				matQuartzIron.setRepresentativeItem(quartzIron);
-				TinkerIntegration.integrate(matQuartzIron, FluidRegistry.getFluid("quartzenrichediron")).integrate();
+				TinkerRegistry.integrate(matQuartzIron, FluidRegistry.getFluid("quartzenrichediron"));
 				TinkerRegistry.registerMelting(quartzIron, FluidRegistry.getFluid("quartzenrichediron"), 144);
 				TinkerRegistry.addMaterialStats(matQuartzIron,
 						new HeadMaterialStats(500, 7.65f, 6.83f, HarvestLevels.OBSIDIAN),
@@ -428,7 +429,7 @@ public class ModMaterials {
 				matDraconium.addTrait(ModTraits.energyRepair);
 				matDraconium.addTrait(ModTraits.energyEater, MaterialTypes.HEAD);
 				matDraconium.addTrait(ModTraits.op);
-				TinkerIntegration.integrate(matDraconium).integrate();
+				TinkerRegistry.integrate(matDraconium);
 				TinkerRegistry.addMaterialStats(matDraconium,
 						new HeadMaterialStats(1400, 12.04f, 13.53f, HarvestLevels.COBALT),
 						new HandleMaterialStats(1.86f, 400), new ExtraMaterialStats(300),
@@ -443,7 +444,7 @@ public class ModMaterials {
 				matWyvDraconium.addTrait(ModTraits.op);
 				matWyvDraconium.addTrait(ModTraits.energyRepair);
 				matWyvDraconium.addTrait(ModTraits.energyEater, MaterialTypes.HEAD);
-				TinkerIntegration.integrate(matWyvDraconium).integrate();
+				TinkerRegistry.integrate(matWyvDraconium);
 				TinkerRegistry.addMaterialStats(matWyvDraconium, new HeadMaterialStats(1700, 16.35f, 19.76f, 5),
 						new HandleMaterialStats(2.76f, 600), new ExtraMaterialStats(450),
 						new BowMaterialStats(4.06f, 2.98f, 14f));
@@ -457,7 +458,7 @@ public class ModMaterials {
 				matAwaDraconium.addTrait(ModTraits.op);
 				matAwaDraconium.addTrait(ModTraits.energyRepair);
 				matAwaDraconium.addTrait(ModTraits.energyEater, MaterialTypes.HEAD);
-				TinkerIntegration.integrate(matAwaDraconium).integrate();
+				TinkerRegistry.integrate(matAwaDraconium);
 				TinkerRegistry.addMaterialStats(matAwaDraconium, new HeadMaterialStats(2000, 25.43f, 29.52f, 6),
 						new HandleMaterialStats(3.12f, 800), new ExtraMaterialStats(600),
 						new BowMaterialStats(5.60f, 3.76f, 20f));
@@ -471,10 +472,10 @@ public class ModMaterials {
 				matChaDraconium.addTrait(ModTraits.op);
 				matChaDraconium.addTrait(ModTraits.energyEater, MaterialTypes.HEAD);
 				matChaDraconium.addTrait(ModTraits.weee, MaterialTypes.HEAD);
-				TinkerIntegration.integrate(matChaDraconium).integrate();
-				TinkerRegistry.addMaterialStats(matChaDraconium, new HeadMaterialStats(3000, 32.73f, 50.76f, 7),
+				TinkerRegistry.integrate(matChaDraconium);
+				TinkerRegistry.addMaterialStats(matChaDraconium, new HeadMaterialStats(3000, 32.73f, 1400.76f, 7),
 						new HandleMaterialStats(5.31f, 1200), new ExtraMaterialStats(1000),
-						new BowMaterialStats(8.96f, 5.14f, 40f));
+						new BowMaterialStats(8.96f, 5.14f, 800f));
 			}
 		}
 
@@ -488,7 +489,7 @@ public class ModMaterials {
 				matMagWood.addTrait(ModTraits.moarwritable);
 				matMagWood.addTrait(ModTraits.moarwritable2, MaterialTypes.HEAD);
 				matMagWood.addTrait(TinkerTraits.ecological);
-				TinkerIntegration.integrate(matMagWood).integrate();
+				TinkerRegistry.integrate(matMagWood);
 				TinkerRegistry.addMaterialStats(matMagWood,
 						new HeadMaterialStats(120, 1.23f, 1.65f, HarvestLevels.STONE),
 						new HandleMaterialStats(0.78f, 10), new ExtraMaterialStats(20),
@@ -538,7 +539,7 @@ public class ModMaterials {
 					new HandleMaterialStats(1.98f, 400), new ExtraMaterialStats(290),
 					new BowMaterialStats(1.64f, 2.56f, 10f));
 		}
-		if (Loader.isModLoaded("ProjectE")) {
+		if (Loader.isModLoaded("projecte")) {
 			if (ConfigOptions.materialIsAllowed("darkmatter")) {
 				Item matter = Item.REGISTRY.getObject(new ResourceLocation("projecte", "item.pe_matter"));
 				matDarkMatter = new Material("darkmatter", 0x270133);
@@ -547,7 +548,7 @@ public class ModMaterials {
 				matDarkMatter.setRepresentativeItem(new ItemStack(matter, 1, 0));
 				matDarkMatter.addTrait(ModTraits.darkness);
 				matDarkMatter.addTrait(ModTraits.instantdeath, MaterialTypes.HEAD);
-				TinkerIntegration.integrate(matDarkMatter).integrate();
+				TinkerRegistry.integrate(matDarkMatter);
 				TinkerRegistry.addMaterialStats(matDarkMatter,
 						new HeadMaterialStats(1200, 13.62f, 9.04f, HarvestLevels.COBALT),
 						new HandleMaterialStats(2.03f, 350), new ExtraMaterialStats(200),
@@ -560,7 +561,7 @@ public class ModMaterials {
 				matRedMatter.setCraftable(true);
 				matRedMatter.setRepresentativeItem(new ItemStack(matter, 1, 1));
 				matRedMatter.addTrait(ModTraits.weee, MaterialTypes.HEAD);
-				TinkerIntegration.integrate(matRedMatter).integrate();
+				TinkerRegistry.integrate(matRedMatter);
 				TinkerRegistry.addMaterialStats(matRedMatter,
 						new HeadMaterialStats(1900, 16.74f, 15.07f, HarvestLevels.COBALT),
 						new HandleMaterialStats(3.86f, 500), new ExtraMaterialStats(500),
@@ -615,7 +616,7 @@ public class ModMaterials {
 				matMica.addItem(mica, 1, Material.VALUE_Ingot);
 				matMica.setCraftable(true);
 				matMica.setRepresentativeItem(mica);
-				TinkerIntegration.integrate(matMica).integrate();
+				TinkerRegistry.integrate(matMica);
 				TinkerRegistry.addMaterialStats(matMica,
 						new HeadMaterialStats(703, 5.62f, 6.32f, HarvestLevels.OBSIDIAN),
 						new HandleMaterialStats(2.13f, 100), new ExtraMaterialStats(250),
@@ -718,7 +719,7 @@ public class ModMaterials {
 				matCertus.setCraftable(true);
 				matCertus.setRepresentativeItem(new ItemStack(material, 1, 0));
 				matCertus.addTrait(TinkerTraits.shocking);
-				TinkerIntegration.integrate(matCertus).integrate();
+				TinkerRegistry.integrate(matCertus);
 				TinkerRegistry.addMaterialStats(matCertus,
 						new HeadMaterialStats(490, 7.45f, 10.45f, HarvestLevels.IRON),
 						new HandleMaterialStats(0.74f, 30), new ExtraMaterialStats(26),
@@ -730,7 +731,7 @@ public class ModMaterials {
 				matFluix.addItem(new ItemStack(material, 1, 7), 1, Material.VALUE_Ingot);
 				matFluix.setCraftable(true);
 				matFluix.setRepresentativeItem(new ItemStack(material, 1, 7));
-				TinkerIntegration.integrate(matFluix).integrate();
+				TinkerRegistry.integrate(matFluix);
 				TinkerRegistry.addMaterialStats(matFluix,
 						new HeadMaterialStats(680, 13.32f, 12.65f, HarvestLevels.DIAMOND),
 						new HandleMaterialStats(0.45f, 10), new ExtraMaterialStats(40),
@@ -741,12 +742,13 @@ public class ModMaterials {
 
 	private static Material ingotMaterial(String name, int color, int temp) {
 		Material material = new Material(name.toLowerCase(), color);
+		material.addCommonItems(RandomHelper.capatilizeString(name));
 		ModFluids.registerFluid(name.toLowerCase(), color, temp);
 
 		MoarMaterialIntegration m = new MoarMaterialIntegration(material, FluidRegistry.getFluid(name.toLowerCase()),
 				name);
 		m.setRepresentativeItem("ingot" + name).toolforge();
-		m.integrate(force);
+		m.preInit(force);
 		TinkerRegistry.integrate(m);
 
 		material.addItemIngot("ingot" + name);
@@ -761,7 +763,7 @@ public class ModMaterials {
 
 		MoarMaterialIntegration m = new MoarMaterialIntegration(oreName, material, FluidRegistry.getFluid(name), null);
 		m.setRepresentativeItem(oreName).toolforge();
-		m.integrate(force);
+		m.preInit(force);
 		TinkerRegistry.integrate(m);
 
 		material.addItemIngot(oreName);
@@ -775,7 +777,7 @@ public class ModMaterials {
 
 		MoarMaterialIntegration m = new MoarMaterialIntegration(oreName, material, null, null);
 		m.setRepresentativeItem(oreName);
-		m.integrate(force);
+		m.preInit(force);
 		TinkerRegistry.integrate(m);
 
 		material.addItemIngot(oreName);
@@ -786,12 +788,13 @@ public class ModMaterials {
 
 	private static Material ingotMaterialNoDust(String name, int color, int temp) {
 		Material material = new Material(name.toLowerCase(), color);
+		material.addCommonItems(RandomHelper.capatilizeString(name));
 		ModFluids.registerFluid(name.toLowerCase(), color, temp);
 
 		MaterialIntegrationNoDust m = new MaterialIntegrationNoDust(material,
 				FluidRegistry.getFluid(name.toLowerCase()), name);
 		m.toolforge();
-		m.integrate(force);
+		m.preInit(force);
 		TinkerRegistry.integrate(m);
 
 		material.addItemIngot("ingot" + name);
@@ -802,10 +805,11 @@ public class ModMaterials {
 
 	private static Material ingotMaterialExist(Fluid fluid, String name, int color) {
 		Material material = new Material(name.toLowerCase(), color);
+		material.addCommonItems(RandomHelper.capatilizeString(name));
 
-		MoarMaterialIntegration m = new MoarMaterialIntegration(material, fluid, name);
+		MaterialIntegrationExists m = new MaterialIntegrationExists(material, fluid, name);
 		m.setRepresentativeItem("ingot" + name).toolforge();
-		m.integrate(force);
+		m.preInit(force);
 		TinkerRegistry.integrate(m);
 
 		material.addItemIngot("ingot" + name);

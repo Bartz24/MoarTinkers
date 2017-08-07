@@ -17,8 +17,11 @@ public class ModAlloys {
 		registerAlloy("invar*3", "iron*2", "nickel*1");
 		if (!Loader.isModLoaded("immersiveengineering"))
 			registerAlloy("constantan*2", "copper*1", "nickel*1");
-		registerAlloy("enderium*144", "tin*72", "silver*36", "platinum*36", "ender*250", "pyrotheum*125");
+		registerAlloy("enderium*144", "lead*108", "platinum*36", "ender*250");
 		registerAlloy("electrumflux*144", "electrum*144", "redstone*500");
+		if(Loader.isModLoaded("thermalfoundation"))
+			TinkerRegistry.registerSmelteryFuel(new FluidStack(FluidRegistry.getFluid("pyrotheum"), 50), 400);
+		
 	}
 
 	public static void registerAlloy(String out, String... in) {

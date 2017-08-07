@@ -16,7 +16,7 @@ public class TraitReflect extends AbstractTrait {
 	@Override
 	public void onBlock(ItemStack tool, EntityPlayer player, LivingHurtEvent event) {
 		if (!player.world.isRemote && random.nextFloat() <= 0.4f) {
-			Entity entity = event.getSource().getEntity();
+			Entity entity = event.getSource().getTrueSource();
 			if (entity instanceof EntityLivingBase && entity.isEntityAlive()) {
 				((EntityLivingBase) entity).attackEntityFrom(new EntityDamageSource("reflect", player),
 						event.getAmount());

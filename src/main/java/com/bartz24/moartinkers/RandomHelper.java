@@ -7,6 +7,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import com.google.common.collect.ImmutableSet;
 
+import joptsimple.internal.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.inventory.IInventory;
@@ -27,6 +28,10 @@ import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
 public class RandomHelper {
 
+	public static String capatilizeString(String s) {
+		return s == null ? null : (s.substring(0, 1).toUpperCase() + s.substring(1));
+	}
+
 	public static IBlockState getBlockStateFromStack(ItemStack stack) {
 		int meta = stack.getMetadata();
 		if (!(stack.getItem() instanceof ItemBlock))
@@ -41,7 +46,7 @@ public class RandomHelper {
 		if (stack1.isItemEqual(stack2))
 			return true;
 
-		if (stack1 == null && stack2 != null && stack1.getMetadata() == OreDictionary.WILDCARD_VALUE
+		if (stack1.isEmpty() && !stack2.isEmpty() && stack1.getMetadata() == OreDictionary.WILDCARD_VALUE
 				|| stack2.getMetadata() == OreDictionary.WILDCARD_VALUE) {
 			return stack1.getItem() == stack2.getItem();
 		}
@@ -49,7 +54,7 @@ public class RandomHelper {
 	}
 
 	public static boolean canStacksMerge(ItemStack stack1, ItemStack stack2) {
-		if (stack1 == null || stack2 == null) {
+		if (stack1.isEmpty() || stack2.isEmpty()) {
 			return false;
 		}
 		if (!stack1.isItemEqual(stack2)) {
@@ -66,27 +71,27 @@ public class RandomHelper {
 		if (!canStacksMerge(mergeSource, mergeTarget)) {
 			return 0;
 		}
-		int mergeCount = Math.min(mergeTarget.getMaxStackSize() - mergeTarget.stackSize, mergeSource.stackSize);
+		int mergeCount = Math.min(mergeTarget.getMaxStackSize() - mergeTarget.getCount(), mergeSource.getCount());
 		if (mergeCount < 1) {
 			return 0;
 		}
 		if (doMerge) {
-			mergeTarget.stackSize += mergeCount;
+			mergeTarget.grow(mergeCount);
 		}
 		return mergeCount;
 	}
 
 	public static ItemStack fillInventory(IInventory inv, ItemStack stack) {
-		if (inv != null) {
+		if (!inv.isEmpty()) {
 			for (int i = 0; i < inv.getSizeInventory(); i++) {
-				if (stack == null)
-					return null;
+				if (stack.isEmpty())
+					return ItemStack.EMPTY;
 				ItemStack inside = inv.getStackInSlot(i);
-				if (inside == null) {
+				if (inside.isEmpty()) {
 					inv.setInventorySlotContents(i, stack);
-					return null;
+					return ItemStack.EMPTY;
 				} else if (RandomHelper.canStacksMerge(inside, stack)) {
-					stack.stackSize -= RandomHelper.mergeStacks(stack, inside, true);
+					stack.shrink(RandomHelper.mergeStacks(stack, inside, true));
 				}
 			}
 		}
@@ -97,14 +102,14 @@ public class RandomHelper {
 	public static ItemStack fillInventory(IItemHandler inv, ItemStack stack) {
 		if (inv != null) {
 			for (int i = 0; i < inv.getSlots(); i++) {
-				if (stack == null)
-					return null;
+				if (stack.isEmpty())
+					return ItemStack.EMPTY;
 				ItemStack inside = inv.getStackInSlot(i);
-				if (inside == null) {
+				if (inside.isEmpty()) {
 					inv.insertItem(i, stack, false);
-					return null;
+					return ItemStack.EMPTY;
 				} else if (RandomHelper.canStacksMerge(inside, stack)) {
-					stack.stackSize -= RandomHelper.mergeStacks(stack, inside, true);
+					stack.shrink(RandomHelper.mergeStacks(stack, inside, true));
 				}
 			}
 		}

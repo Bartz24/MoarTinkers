@@ -1,5 +1,6 @@
 package com.bartz24.moartinkers;
 
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
@@ -8,13 +9,13 @@ import slimeknights.tconstruct.common.config.Config;
 import slimeknights.tconstruct.library.MaterialIntegration;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.Material;
-import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
-import slimeknights.tconstruct.tools.TinkerTools;
 
 public class MoarMaterialIntegration extends MaterialIntegration {
-	private boolean integrated;
+	protected boolean integrated;
 	private boolean toolforge;
+	private boolean preInit;
+	protected boolean force;
 
 	public MoarMaterialIntegration(Material material) {
 		this(material, null);
@@ -33,48 +34,23 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 	}
 
 	public MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix, String... oreRequirement) {
-		super(material, fluid, oreSuffix, oreRequirement);
+		super(material, fluid, RandomHelper.capatilizeString(oreSuffix), oreRequirement);
 
 		this.integrated = false;
+		this.preInit = false;
 	}
 
-	public void registerFluidBlock() {
-		TinkerFluids.registerMoltenBlock(fluid);
-		MoarTinkers.proxy.registerFluidModel(fluid);
-	}
-	
-	public void integrate()
-	{
-		integrate(false);
+	public void preInit() {
+		preInit(false);
 	}
 
-	public void integrate(boolean force) {
-		if (integrated) {
+	public void preInit(boolean force) {
+		if (preInit) {
 			return;
 		}
+		this.force = force;
 
-		if (!force) {
-			if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
-				int found = 0;
-				for (String ore : OreDictionary.getOreNames()) {
-					for (int i = 0; i < oreRequirement.length; i++) {
-						if (oreRequirement[i].equals(ore)) {
-							if (OreDictionary.getOres(ore).size() > 0) {
-								if (++found == oreRequirement.length) {
-									break;
-								}
-							}
-						}
-					}
-				}
-				// prerequisite not fulfilled
-				if (found < oreRequirement.length) {
-					return;
-				}
-			}
-		}
-
-		integrated = true;
+		preInit = true;
 
 		// decativate fluids if smeltery isn't loaded
 		if (!TConstruct.pulseManager.isPulseLoaded(TinkerSmeltery.PulseId)) {
@@ -84,13 +60,7 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 		// fluid first.
 		if (fluid != null) {
 			Fluid registeredFluid = FluidRegistry.getFluid(fluid.getName());
-			// we only register blocks and buckets if it's our own fluid
-			if (registeredFluid == fluid && fluid.getBlock() == null) {
-				registerFluidBlock();
-			}
 
-			// we register a bucket for the fluid if it's not done because we
-			// need it
 			if (!FluidRegistry.getBucketFluids().contains(registeredFluid)) {
 				FluidRegistry.addBucketForFluid(registeredFluid);
 			}
@@ -106,11 +76,6 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 				material.setCraftable(true);
 			}
 		}
-
-		// add toolforge recipe
-		if (toolforge && oreSuffix != null && !oreSuffix.isEmpty()) {
-			TinkerTools.registerToolForgeBlock("block" + oreSuffix);
-		}
 	}
 
 	public boolean isIntegrated() {
@@ -118,9 +83,20 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 	}
 
 	public void integrateRecipes() {
-		if (!integrated) {
+		if (integrated) {
 			return;
 		}
+
+		if (!force) {
+			if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
+				for (String ore : oreRequirement) {
+					if (OreDictionary.getOres(ore, false).isEmpty()) {
+						return;
+					}
+				}
+			}
+		}
+		integrated = true;
 		// register melting and casting
 		if (fluid != null && oreSuffix != null) {
 			TinkerSmeltery.registerOredictMeltingCasting(fluid, oreSuffix);
