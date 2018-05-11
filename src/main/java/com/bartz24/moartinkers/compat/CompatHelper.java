@@ -14,14 +14,11 @@ public class CompatHelper {
 	public static List<ItemStack> findItemsWithEnergy(NonNullList<ItemStack> inventory) {
 		List<ItemStack> stacks = new ArrayList<>();
 		for (ItemStack stack : inventory) {
-			if (!stack.isEmpty()) {
-				if ((stack.hasCapability(CapabilityEnergy.ENERGY, null)
-						&& stack.getCapability(CapabilityEnergy.ENERGY, null).getEnergyStored() > 0)
-						|| (stack.getItem() instanceof IEnergyContainerItem
-								&& ((IEnergyContainerItem) stack.getItem()).getEnergyStored(stack) > 0)) {
-					stacks.add(stack);
-					continue;
-				}
+			if (!stack.isEmpty() && ((stack.hasCapability(CapabilityEnergy.ENERGY, null)
+					&& stack.getCapability(CapabilityEnergy.ENERGY, null).getEnergyStored() > 0)
+					|| (stack.getItem() instanceof IEnergyContainerItem
+					&& ((IEnergyContainerItem) stack.getItem()).getEnergyStored(stack) > 0))) {
+				stacks.add(stack);
 			}
 		}
 		return stacks;

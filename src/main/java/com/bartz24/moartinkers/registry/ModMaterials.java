@@ -25,84 +25,84 @@ import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.tools.TinkerTraits;
 
 public class ModMaterials {
-    public static Material matEnderium;
-    public static Material matPlatinum;
-    public static Material matIridium;
-    public static Material matMithril;
-    public static Material matSignalum;
-    public static Material matLumium;
-    public static Material matConstantan;
-    public static Material matInvar;
-    public static Material matNickel;
-    public static Material matTin;
-    public static Material matAluminum;
-    public static Material matBrass;
-    public static Material matZinc;
+    private static Material matEnderium;
+    private static Material matPlatinum;
+    private static Material matIridium;
+    private static Material matMithril;
+    private static Material matSignalum;
+    private static Material matLumium;
+    private static Material matConstantan;
+    private static Material matInvar;
+    private static Material matNickel;
+    private static Material matTin;
+    private static Material matAluminum;
+    private static Material matBrass;
+    private static Material matZinc;
 
-    public static Material matRefGlowstone;
-    public static Material matRefObsidian;
-    public static Material matOsmium;
+    private static Material matRefGlowstone;
+    private static Material matRefObsidian;
+    private static Material matOsmium;
 
-    public static Material matManasteel;
-    public static Material matTerrasteel;
-    public static Material matElementium;
-    public static Material matGaia;
+    private static Material matManasteel;
+    private static Material matTerrasteel;
+    private static Material matElementium;
+    private static Material matGaia;
 
-    public static Material matElecSteel;
-    public static Material matEnerAlloy;
-    public static Material matVibrAlloy;
-    public static Material matRedAlloy;
-    public static Material matCondIron;
-    public static Material matPulsIron;
-    public static Material matDarkSteel;
-    public static Material matSoularium;
+    private static Material matElecSteel;
+    private static Material matEnerAlloy;
+    private static Material matVibrAlloy;
+    private static Material matRedAlloy;
+    private static Material matCondIron;
+    private static Material matPulsIron;
+    private static Material matDarkSteel;
+    private static Material matSoularium;
 
-    public static Material matYellorium;
-    public static Material matCyanite;
-    public static Material matBlutonium;
-    public static Material matLudicrite;
+    private static Material matYellorium;
+    private static Material matCyanite;
+    private static Material matBlutonium;
+    private static Material matLudicrite;
 
-    public static Material matQuartzIron;
+    private static Material matQuartzIron;
 
-    public static Material matDraconium;
-    public static Material matWyvDraconium;
-    public static Material matAwaDraconium;
-    public static Material matChaDraconium;
+    private static Material matDraconium;
+    private static Material matWyvDraconium;
+    private static Material matAwaDraconium;
+    private static Material matChaDraconium;
 
-    public static Material matEnchMetal;
-    public static Material matMagWood;
+    private static Material matEnchMetal;
+    private static Material matMagWood;
 
-    public static Material matPsimetal;
-    public static Material matIvoryPsimetal;
-    public static Material matEbonyPsimetal;
-    public static Material matPsigem;
+    private static Material matPsimetal;
+    private static Material matIvoryPsimetal;
+    private static Material matEbonyPsimetal;
+    private static Material matPsigem;
 
-    public static Material matDarkMatter;
-    public static Material matRedMatter;
+    private static Material matDarkMatter;
+    private static Material matRedMatter;
 
-    public static Material matFluxElec;
+    private static Material matFluxElec;
 
-    public static Material matHardStone;
-    public static Material matAlabaster;
-    public static Material matBasalt;
-    public static Material matLonsdaleite;
-    public static Material matMica;
+    private static Material matHardStone;
+    private static Material matAlabaster;
+    private static Material matBasalt;
+    private static Material matLonsdaleite;
+    private static Material matMica;
 
-    public static Material matTitanium;
-    public static Material matTungsten;
-    public static Material matTungstensteel;
-    public static Material matChrome;
-    public static Material matRefinedIron;
-    public static Material matAdvAlloy;
-    public static Material matRuby;
-    public static Material matSapphire;
-    public static Material matPeridot;
-    public static Material matRedGarnet;
-    public static Material matYellowGarnet;
-    public static Material matRubber;
+    private static Material matTitanium;
+    private static Material matTungsten;
+    private static Material matTungstensteel;
+    private static Material matChrome;
+    private static Material matRefinedIron;
+    private static Material matAdvAlloy;
+    private static Material matRuby;
+    private static Material matSapphire;
+    private static Material matPeridot;
+    private static Material matRedGarnet;
+    private static Material matYellowGarnet;
+    private static Material matRubber;
 
-    public static Material matCertus;
-    public static Material matFluix;
+    private static Material matCertus;
+    private static Material matFluix;
 
     private static boolean force = false;
 
@@ -167,15 +167,13 @@ public class ModMaterials {
                     new BowMaterialStats(2.89f, 2.36f, 9f));
         }
 
-        if (isRegistrable("constantan")) {
-            if (!Loader.isModLoaded("immersiveengineering")) {
-                matConstantan = ingotMaterial("Constantan", 0xD9B34A, 500);
-                matConstantan.addTrait(ModTraits.constant);
-                TinkerRegistry.addMaterialStats(matConstantan,
-                        new HeadMaterialStats(300, 4.45f, 5.03f, HarvestLevels.DIAMOND),
-                        new HandleMaterialStats(0.34f, 135), new ExtraMaterialStats(13),
-                        new BowMaterialStats(2.31f, 1.43f, 4f));
-            }
+        if (isRegistrable("constantan") && !Loader.isModLoaded("immersiveengineering")) {
+            matConstantan = ingotMaterial("Constantan", 0xD9B34A, 500);
+            matConstantan.addTrait(ModTraits.constant);
+            TinkerRegistry.addMaterialStats(matConstantan,
+                    new HeadMaterialStats(300, 4.45f, 5.03f, HarvestLevels.DIAMOND),
+                    new HandleMaterialStats(0.34f, 135), new ExtraMaterialStats(13),
+                    new BowMaterialStats(2.31f, 1.43f, 4f));
         }
 
         if (isRegistrable("invar")) {
@@ -483,22 +481,20 @@ public class ModMaterials {
             }
         }
 
-        if (isRegistrable("magicalwood")) {
-            if (Loader.isModLoaded("extrautils2")) {
-                Item magWood = Item.REGISTRY.getObject(new ResourceLocation("extrautils2", "decorativesolidwood"));
-                matMagWood = new Material("magicalwood", 0xB7C752);
-                matMagWood.addItem(new ItemStack(magWood, 1, 1), 1, Material.VALUE_Ingot);
-                matMagWood.setCraftable(true);
-                matMagWood.setRepresentativeItem(new ItemStack(magWood, 1, 1));
-                matMagWood.addTrait(ModTraits.moarwritable);
-                matMagWood.addTrait(ModTraits.moarwritable2, MaterialTypes.HEAD);
-                matMagWood.addTrait(TinkerTraits.ecological);
-                TinkerRegistry.integrate(matMagWood);
-                TinkerRegistry.addMaterialStats(matMagWood,
-                        new HeadMaterialStats(120, 1.23f, 1.65f, HarvestLevels.STONE),
-                        new HandleMaterialStats(0.78f, 10), new ExtraMaterialStats(20),
-                        new BowMaterialStats(0.96f, 0.87f, 0.5f));
-            }
+        if (isRegistrable("magicalwood") && Loader.isModLoaded("extrautils2")) {
+            Item magWood = Item.REGISTRY.getObject(new ResourceLocation("extrautils2", "decorativesolidwood"));
+            matMagWood = new Material("magicalwood", 0xB7C752);
+            matMagWood.addItem(new ItemStack(magWood, 1, 1), 1, Material.VALUE_Ingot);
+            matMagWood.setCraftable(true);
+            matMagWood.setRepresentativeItem(new ItemStack(magWood, 1, 1));
+            matMagWood.addTrait(ModTraits.moarwritable);
+            matMagWood.addTrait(ModTraits.moarwritable2, MaterialTypes.HEAD);
+            matMagWood.addTrait(TinkerTraits.ecological);
+            TinkerRegistry.integrate(matMagWood);
+            TinkerRegistry.addMaterialStats(matMagWood,
+                    new HeadMaterialStats(120, 1.23f, 1.65f, HarvestLevels.STONE),
+                    new HandleMaterialStats(0.78f, 10), new ExtraMaterialStats(20),
+                    new BowMaterialStats(0.96f, 0.87f, 0.5f));
         }
         if (isRegistrable("enchantedmetal")) {
 
@@ -612,20 +608,18 @@ public class ModMaterials {
                     new HandleMaterialStats(3.41f, 100), new ExtraMaterialStats(200),
                     new BowMaterialStats(0.12f, 0.04f, 0.2f));
         }
-        if (isRegistrable("mica")) {
-            if (Loader.isModLoaded("environmentaltech")) {
-                Item mica = Item.REGISTRY.getObject(new ResourceLocation("environmentaltech", "mica"));
+        if (isRegistrable("mica") && Loader.isModLoaded("environmentaltech")) {
+            Item mica = Item.REGISTRY.getObject(new ResourceLocation("environmentaltech", "mica"));
 
-                matMica = new Material("mica", 0xDEDEDE);
-                matMica.addItem(mica, 1, Material.VALUE_Ingot);
-                matMica.setCraftable(true);
-                matMica.setRepresentativeItem(mica);
-                TinkerRegistry.integrate(matMica);
-                TinkerRegistry.addMaterialStats(matMica,
-                        new HeadMaterialStats(703, 5.62f, 6.32f, HarvestLevels.OBSIDIAN),
-                        new HandleMaterialStats(2.13f, 100), new ExtraMaterialStats(250),
-                        new BowMaterialStats(3.04f, 4.06f, 5f));
-            }
+            matMica = new Material("mica", 0xDEDEDE);
+            matMica.addItem(mica, 1, Material.VALUE_Ingot);
+            matMica.setCraftable(true);
+            matMica.setRepresentativeItem(mica);
+            TinkerRegistry.integrate(matMica);
+            TinkerRegistry.addMaterialStats(matMica,
+                    new HeadMaterialStats(703, 5.62f, 6.32f, HarvestLevels.OBSIDIAN),
+                    new HandleMaterialStats(2.13f, 100), new ExtraMaterialStats(250),
+                    new BowMaterialStats(3.04f, 4.06f, 5f));
         }
         if (isRegistrable("refinediron")) {
             matRefinedIron = ingotMaterial("RefinedIron", 0xE0E0E0, 780);

@@ -3,7 +3,7 @@
   "modid": "moartinkers",
   "name": "Moar Tinkers",
   "description": "Adds moar tinker materials and traits!",
-  "version": "0.5.2",
+  "version": "0.5.5",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

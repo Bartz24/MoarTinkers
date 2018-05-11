@@ -1,6 +1,5 @@
 package com.bartz24.moartinkers;
 
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
@@ -13,13 +12,8 @@ import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
 public class MoarMaterialIntegration extends MaterialIntegration {
 	protected boolean integrated;
-	private boolean toolforge;
 	private boolean preInit;
 	protected boolean force;
-
-	public MoarMaterialIntegration(Material material) {
-		this(material, null);
-	}
 
 	public MoarMaterialIntegration(Material material, Fluid fluid) {
 		this(null, material, fluid, null);
@@ -87,12 +81,10 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 			return;
 		}
 
-		if (!force) {
-			if (oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
-				for (String ore : oreRequirement) {
-					if (OreDictionary.getOres(ore, false).isEmpty()) {
-						return;
-					}
+		if (!force && oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
+			for (String ore : oreRequirement) {
+				if (OreDictionary.getOres(ore, false).isEmpty()) {
+					return;
 				}
 			}
 		}
@@ -108,7 +100,6 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 
 	public MaterialIntegration toolforge() {
 		super.toolforge();
-		toolforge = true;
 		return this;
 	}
 }

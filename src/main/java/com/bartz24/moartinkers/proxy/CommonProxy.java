@@ -38,9 +38,5 @@ public class CommonProxy
 	{
 		//ModCrafting.init();
 	}
-	
-	public void registerFluidModel(Fluid fluid)
-	{
-		
-	}
+
 }
