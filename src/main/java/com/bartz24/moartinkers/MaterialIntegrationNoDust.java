@@ -13,11 +13,7 @@ public class MaterialIntegrationNoDust extends MoarMaterialIntegration {
 	}
 
 	public void integrateRecipes() {
-		if (integrated) {
-			return;
-		}
-
-		if (!force && oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
+		if (integrated || !force && oreRequirement != null && oreRequirement.length > 0 && !Config.forceRegisterAll) {
 			for (String ore : oreRequirement) {
 				if (OreDictionary.getOres(ore, false).isEmpty()) {
 					return;

@@ -15,10 +15,6 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 	private boolean preInit;
 	protected boolean force;
 
-	public MoarMaterialIntegration(Material material, Fluid fluid) {
-		this(null, material, fluid, null);
-	}
-
 	public MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix) {
 		this("ingot" + oreSuffix, material, fluid, oreSuffix);
 	}
@@ -27,7 +23,7 @@ public class MoarMaterialIntegration extends MaterialIntegration {
 		this(material, fluid, oreSuffix, oreRequirement);
 	}
 
-	public MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix, String... oreRequirement) {
+	private MoarMaterialIntegration(Material material, Fluid fluid, String oreSuffix, String... oreRequirement) {
 		super(material, fluid, RandomHelper.capatilizeString(oreSuffix), oreRequirement);
 
 		this.integrated = false;
