@@ -18,13 +18,9 @@ import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 import java.util.List;
 import java.util.Set;
 
-public class RandomHelper {
+class RandomHelper {
 
-	public static String capatilizeString(String s) {
-		return s == null ? null : (s.substring(0, 1).toUpperCase() + s.substring(1));
-	}
-
-	public static void noDustRegisterOredictMeltingCasting(Fluid fluid, String ore) {
+	static void noDustRegisterOredictMeltingCasting(Fluid fluid, String ore) {
 		ImmutableSet.Builder<Pair<List<ItemStack>, Integer>> builder = ImmutableSet.builder();
 		Pair<List<ItemStack>, Integer> nuggetOre = Pair.of(OreDictionary.getOres("nugget" + ore),
 				Material.VALUE_Nugget);
