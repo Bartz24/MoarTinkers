@@ -18,44 +18,65 @@ public class ModMaterials {
 
     private static MaterialRegistration[] materials = new MaterialRegistration[]{
             new MaterialRegistration.MaterialRegistrationBuilder()
-                    .setIdentifier("enderium")
-                    .setColor(0x006E61)
-                    .setTemp(1200)
+                    .setIdentifier("enderium").setColor(0x006E61).setTemp(1200)
                     .setTraits(
                             new Tuple[]{
                                     new Tuple<ITrait, String>(TinkerTraits.enderference, null),
                                     new Tuple<ITrait, String>(ModTraits.enderMagnetic, MaterialTypes.HEAD)
                             })
                     .setHead(1020, 8.31f, 10.19f, HarvestLevels.COBALT)
-                    .setHandle(0.42f, 600)
-                    .setExtra(60)
+                    .setHandle(0.42f, 600).setExtra(60)
                     .setBow(1.22f, 1.1f, 5f)
                     .build(),
             new MaterialRegistration.MaterialRegistrationBuilder()
-                    .setIdentifier("platinum")
-                    .setColor(0x39CAFA)
-                    .setTemp(900)
+                    .setIdentifier("platinum").setColor(0x39CAFA).setTemp(900)
                     .setTraits(
                             new Tuple[]{
                                     new Tuple<ITrait, String>(TinkerTraits.dense, null)
                             })
                     .setHead(1410, 9.47f, 7.39f, HarvestLevels.OBSIDIAN)
-                    .setHandle(0.78f, 600)
-                    .setExtra(120)
+                    .setHandle(0.78f, 600).setExtra(120)
                     .setBow(0.67f, 0.6f, 3f)
                     .build(),
             new MaterialRegistration.MaterialRegistrationBuilder()
-                    .setIdentifier("iridium")
-                    .setColor(0xEBEBEB)
-                    .setTemp(1500)
+                    .setIdentifier("iridium").setColor(0xEBEBEB).setTemp(1500)
                     .setTraits(
                             new Tuple[]{
                                     new Tuple<ITrait, String>(ModTraits.weee, MaterialTypes.HEAD)
                             })
                     .setHead(1910, 11.02f, 9.95f, HarvestLevels.OBSIDIAN)
-                    .setHandle(0.83f, 500)
-                    .setExtra(200)
+                    .setHandle(0.83f, 500).setExtra(200)
                     .setBow(0.23f, 1.44f, 5f)
+                    .build(),
+            new MaterialRegistration.MaterialRegistrationBuilder()
+                    .setIdentifier("mithril").setColor(0x2095B0).setTemp(1350)
+                    .setTraits(
+                            new Tuple[]{
+                                    new Tuple<ITrait, String>(ModTraits.sos, null)
+                            })
+                    .setHead(1160, 13.02f, 7.03f, HarvestLevels.COBALT)
+                    .setHandle(0.49f, 200).setExtra(30)
+                    .setBow(1.87f, 1.23f, 3f)
+                    .build(),
+            new MaterialRegistration.MaterialRegistrationBuilder()
+                    .setIdentifier("signalum").setColor(0xE65B10).setTemp(950)
+                    .setTraits(
+                            new Tuple[]{
+                                    new Tuple<ITrait, String>(TinkerTraits.unnatural, null)
+                            })
+                    .setHead(740, 12.42f, 6.37f, HarvestLevels.OBSIDIAN)
+                    .setHandle(0.52f, 100).setExtra(40)
+                    .setBow(3.24f, 0.78f, 3f)
+                    .build(),
+            new MaterialRegistration.MaterialRegistrationBuilder()
+                    .setIdentifier("Lumium").setColor(0xFFFCB0).setTemp(1000)
+                    .setTraits(
+                            new Tuple[]{
+                                    new Tuple<ITrait, String>(ModTraits.lightboost, null)
+                            })
+                    .setHead(600, 0.6f, 8.34f, HarvestLevels.OBSIDIAN)
+                    .setHandle(0.44f, 90).setExtra(20)
+                    .setBow(2.89f, 2.36f, 9f)
                     .build()
     };
 
@@ -65,32 +86,6 @@ public class ModMaterials {
             materialRegistration.register();
         }
     }
-//        if (isRegistrable("mithril")) {
-//            Material matMithril = ingotMaterial("Mithril", 0x2095B0, 1350);
-//            matMithril.addTrait(ModTraits.sos);
-//            TinkerRegistry.addMaterialStats(matMithril,
-//                    new HeadMaterialStats(1160, 13.02f, 7.03f, HarvestLevels.COBALT),
-//                    new HandleMaterialStats(0.49f, 200), new ExtraMaterialStats(30),
-//                    new BowMaterialStats(1.87f, 1.12f, 3f));
-//        }
-//
-//        if (isRegistrable("signalum")) {
-//            Material matSignalum = ingotMaterial("Signalum", 0xE65B10, 950);
-//            matSignalum.addTrait(TinkerTraits.unnatural);
-//            TinkerRegistry.addMaterialStats(matSignalum,
-//                    new HeadMaterialStats(740, 12.42f, 6.37f, HarvestLevels.OBSIDIAN),
-//                    new HandleMaterialStats(0.52f, 100), new ExtraMaterialStats(40),
-//                    new BowMaterialStats(3.24f, 0.78f, 3f));
-//        }
-//
-//        if (isRegistrable("lumium")) {
-//            Material matLumium = ingotMaterial("Lumium", 0xFFFCB0, 1000);
-//            matLumium.addTrait(ModTraits.lightboost);
-//            TinkerRegistry.addMaterialStats(matLumium, new HeadMaterialStats(600, 8.60f, 8.34f, HarvestLevels.OBSIDIAN),
-//                    new HandleMaterialStats(0.44f, 90), new ExtraMaterialStats(20),
-//                    new BowMaterialStats(2.89f, 2.36f, 9f));
-//        }
-//
 //        if (isRegistrable("constantan") && !Loader.isModLoaded("immersiveengineering")) {
 //            Material matConstantan = ingotMaterial("Constantan", 0xD9B34A, 500);
 //            matConstantan.addTrait(ModTraits.constant);
