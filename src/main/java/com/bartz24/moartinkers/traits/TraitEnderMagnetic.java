@@ -1,9 +1,5 @@
 package com.bartz24.moartinkers.traits;
 
-import java.util.List;
-
-import javax.annotation.Nonnull;
-
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -17,9 +13,12 @@ import slimeknights.tconstruct.library.potion.TinkerPotion;
 import slimeknights.tconstruct.library.traits.AbstractTrait;
 import slimeknights.tconstruct.library.utils.TinkerUtil;
 
+import javax.annotation.Nonnull;
+import java.util.List;
+
 public class TraitEnderMagnetic extends AbstractTrait {
 
-	public static TinkerPotion enderMagnetic = new EnderMagneticPotion();
+	private static TinkerPotion enderMagnetic = new EnderMagneticPotion();
 
 	public TraitEnderMagnetic() {
 		super("endermagnetic", 0x3E8269);
@@ -28,7 +27,6 @@ public class TraitEnderMagnetic extends AbstractTrait {
 	@Override
 	public void afterBlockBreak(ItemStack tool, World world, IBlockState state, BlockPos pos, EntityLivingBase player,
 			boolean wasEffective) {
-		ModifierNBT data = new ModifierNBT(TinkerUtil.getModifierTag(tool, identifier));
 		enderMagnetic.apply(player, 30, 1);
 	}
 

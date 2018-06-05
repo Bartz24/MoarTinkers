@@ -1,10 +1,6 @@
 package com.bartz24.moartinkers.traits;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.bartz24.moartinkers.compat.CompatHelper;
-
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
