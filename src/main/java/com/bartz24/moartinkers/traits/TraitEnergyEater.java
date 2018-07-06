@@ -25,7 +25,7 @@ public class TraitEnergyEater extends AbstractTrait {
 			return;
 		}
 
-		int maxEnergy = (int) (event.getNewSpeed() * 10f);
+		int maxEnergy = (int) Math.pow(event.getNewSpeed(), 2.4f);
 		int energy = 0;
 		List<ItemStack> items = new ArrayList<>();
 		items.addAll(CompatHelper.findItemsWithEnergy(event.getEntityPlayer().inventory.armorInventory));

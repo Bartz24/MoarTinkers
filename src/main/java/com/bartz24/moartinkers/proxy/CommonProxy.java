@@ -18,25 +18,20 @@ public class CommonProxy
 	public void preInit(FMLPreInitializationEvent e)
 	{
 		ConfigOptions.loadConfigThenSave(e);
-		//ModBlocks.init();
-		//ModItems.init();
 		new ModTraits();
 		ModMaterials.preInit();
-		//new ModGuiHandler();
 
 	}
 
 	public void init(FMLInitializationEvent e)
 	{
 		MinecraftForge.EVENT_BUS.register(ModTraits.op);
-		//NetworkRegistry.INSTANCE.registerGuiHandler(MoarTinkers.instance, new ModGuiHandler());
-		//ModCrafting.initOreDict();
 		ModAlloys.init();
+		ModMaterials.init();
 	}
 
 	public void postInit(FMLPostInitializationEvent e)
 	{
-		//ModCrafting.init();
 	}
 
 }

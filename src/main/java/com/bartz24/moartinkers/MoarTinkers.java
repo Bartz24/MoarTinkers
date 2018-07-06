@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = References.ModID, name = References.ModName, dependencies = "required-after:tconstruct;after:appliedenergistics2;after:EnderIO;after:bigreactors;after:refinedstorage;after:draconicevolution;after:extrautils2;after:ProjectE;after:environmentaltech", useMetadata = true, guiFactory = "com.bartz24.moartinkers.config.ConfigGuiFactory")
+@Mod(modid = References.ModID, name = References.ModName, dependencies = "required-after:tconstruct;after:appliedenergistics2;after:bigreactors;after:refinedstorage;after:draconicevolution;after:extrautils2;after:projecte;after:environmentaltech", useMetadata = true, guiFactory = "com.bartz24.moartinkers.config.ConfigGuiFactory")
 public class MoarTinkers {
 	@SidedProxy(clientSide = "com.bartz24.moartinkers.proxy.ClientProxy", serverSide = "com.bartz24.moartinkers.proxy.ServerProxy")
 	public static CommonProxy proxy;

@@ -2,6 +2,9 @@ package com.bartz24.moartinkers.registry;
 
 import com.bartz24.moartinkers.MoarMaterialIntegration;
 import com.bartz24.moartinkers.config.ConfigOptions;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Tuple;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Loader;
@@ -13,49 +16,67 @@ import slimeknights.tconstruct.library.traits.ITrait;
 class MaterialRegistration {
     private static boolean force = ModMaterials.force;
 
-    private String identifier, ore, mod;
-    private Integer color, temp;
-    private Tuple<ITrait, String>[]  traits;
-    private HeadMaterialStats head;
-    private HandleMaterialStats handle;
-    private ExtraMaterialStats extra;
-    private BowMaterialStats bow;
+    protected String identifier, ore = null, oreSuffix = null, mod = null;
+    protected Integer color = 0, temp = 0;
+    protected Tuple<ITrait, String>[] traits = new Tuple[0];
+    protected HeadMaterialStats head;
+    protected HandleMaterialStats handle;
+    protected ExtraMaterialStats extra;
+    protected BowMaterialStats bow;
+    protected BowStringMaterialStats bowstring;
+    protected ResourceLocation castItem;
+    protected int castItemMeta = 0;
+    protected String castItemOre;
 
     MaterialRegistration() {
     }
 
-    private boolean isRegistrable () {
-        return ConfigOptions.materialIsAllowed(identifier)  && TinkerRegistry.getMaterial(identifier).equals(Material.UNKNOWN);
+    private boolean isRegistrable() {
+        return ConfigOptions.materialIsAllowed(identifier) && TinkerRegistry.getMaterial(identifier).equals(Material.UNKNOWN);
     }
 
-    void register() {
-        if (isRegistrable() && (mod == null || Loader.isModLoaded(mod))) {
-            Material material = ingotMaterial(StringUtils.capitalize(identifier), color, temp);
+    protected ItemStack getCastItem() {
+        Item item = Item.REGISTRY.getObject(castItem);
+        if (item != null)
+            return new ItemStack(item, 1, castItemMeta);
+        else
+            return ItemStack.EMPTY;
+    }
+
+
+    void register(boolean latePhase) {
+        if (latePhase && getCastItem() != null) {
+            Material material = TinkerRegistry.getMaterial(identifier);
+            material.addItem(getCastItem(), 1, Material.VALUE_Ingot);
+
+            material.setRepresentativeItem(getCastItem());
+        } else if (!latePhase && isRegistrable() && (mod == null || Loader.isModLoaded(mod))) {
+            Material material = ingotMaterial(StringUtils.capitalize(identifier), ore, color, temp, latePhase);
             for (Tuple<ITrait, String> trait : traits) {
                 if (trait.getSecond() == null) {
                     material.addTrait(trait.getFirst());
-                }
-                else {
+                } else {
                     material.addTrait(trait.getFirst(), trait.getSecond());
                 }
             }
             TinkerRegistry.addMaterialStats(material, head, handle, extra, bow);
+            if (bowstring != null)
+                TinkerRegistry.addMaterialStats(material, bowstring);
         }
     }
 
     static class MaterialRegistrationBuilder extends MaterialRegistration {
-        private String identifier, ore = null, mod = null;
-        private Integer color, temp;
-        private Tuple<ITrait, String>[] traits = null;
-        private HeadMaterialStats head;
-        private HandleMaterialStats handle;
-        private ExtraMaterialStats extra;
-        private BowMaterialStats bow;
 
         public MaterialRegistrationBuilder setOre(String ore) {
             this.ore = ore;
             return this;
         }
+
+        public MaterialRegistrationBuilder setOreSuffix(String suffix) {
+            this.oreSuffix = suffix;
+            return this;
+        }
+
 
         public MaterialRegistrationBuilder setMod(String mod) {
             this.mod = mod;
@@ -102,34 +123,68 @@ class MaterialRegistration {
             return this;
         }
 
+        MaterialRegistrationBuilder setBowString(float modifier) {
+            this.bowstring = new BowStringMaterialStats(modifier);
+            return this;
+        }
+
+        MaterialRegistrationBuilder setItemCast(ItemStack stack) {
+            this.castItem = stack.getItem().getRegistryName();
+            this.castItemMeta = stack.getMetadata();
+            return this;
+        }
+
+        MaterialRegistrationBuilder setItemCast(ResourceLocation itemID, int meta) {
+            castItem = itemID;
+            castItemMeta = meta;
+            return this;
+        }
+
+        MaterialRegistrationBuilder setItemCast(String oreDict) {
+            this.castItemOre = oreDict;
+            return this;
+        }
+
         MaterialRegistration build() {
             return this;
         }
     }
 
-    private static Material ingotMaterial(String name, int color, int temp) {
-        return ingotMaterial(name, null, color, temp);
-    }
-
-    private static Material ingotMaterial(String name, String oreName, int color, int temp) {
+    private Material ingotMaterial(String name, String oreName, int color, int temp, boolean latePhase) {
         Material material = new Material(name, color);
-        ModFluids.registerFluid(name, color, temp);
 
-        MoarMaterialIntegration m;
-        if (oreName == null) {
-            m = new MoarMaterialIntegration(material, FluidRegistry.getFluid(name.toLowerCase()), name);
-            m.setRepresentativeItem("ingot" + name).toolforge();
-            material.addItemIngot("ingot" + name);
+        if (castItem != null || castItemOre != null) {
+
+            MoarMaterialIntegration m = new MoarMaterialIntegration(oreName, material, null, null);
+
+            if (castItem == null) {
+                material.addItem(castItemOre, 1, Material.VALUE_Ingot);
+                m.setRepresentativeItem(castItemOre);
+            }
+            m.preInit(force);
+
+            TinkerRegistry.integrate(m);
+            material.setCraftable(true);
+
+            force = false;
+        } else {
+            ModFluids.registerFluid(name.toLowerCase(), color, temp);
+            MoarMaterialIntegration m;
+            if (oreName == null) {
+                String nameModified = oreSuffix == null ? name : oreSuffix;
+                m = new MoarMaterialIntegration(material, FluidRegistry.getFluid(name.toLowerCase()), nameModified);
+                m.setRepresentativeItem("ingot" + nameModified).toolforge();
+                material.addItemIngot("ingot" + nameModified);
+            } else {
+                m = new MoarMaterialIntegration(oreName, material, FluidRegistry.getFluid(name), null);
+                m.setRepresentativeItem(oreName).toolforge();
+                material.addItemIngot(oreName);
+            }
+            m.preInit(force);
+            TinkerRegistry.integrate(m);
+            material.setCastable(true);
+            force = false;
         }
-        else {
-            m = new MoarMaterialIntegration(oreName, material, FluidRegistry.getFluid(name), null);
-            m.setRepresentativeItem(oreName).toolforge();
-            material.addItemIngot(oreName);
-        }
-        m.preInit(force);
-        TinkerRegistry.integrate(m);
-        material.setCastable(true);
-        force = false;
         return material;
     }
 }
