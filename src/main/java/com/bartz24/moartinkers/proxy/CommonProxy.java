@@ -20,7 +20,6 @@ public class CommonProxy
 		ConfigOptions.loadConfigThenSave(e);
 		new ModTraits();
 		ModMaterials.preInit();
-
 	}
 
 	public void init(FMLInitializationEvent e)
