@@ -2,6 +2,7 @@ buildscript {
     repositories {
         jcenter()
         maven { url = "http://files.minecraftforge.net/maven" }
+//        maven { url = "https://jitpack.io" }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
@@ -38,6 +39,9 @@ repositories {
     maven {
         name 'tehnut'
         url 'http://tehnut.info/maven/'
+    }
+    maven {
+        url = "https://jitpack.io" 
     }
 }
 
@@ -82,7 +86,8 @@ dependencies {
 
     compile files("lib/RedstoneFlux-1.12-2.0.1.2-universal.jar")
 
-    deobfCompile 'armory-expansion:armoryexpansion:1.3.0'
+    //deobfCompile 'armory-expansion:armoryexpansion:1.3.0'
+    compile 'com.github.yaibatoken:Armory-Expansion:-SNAPSHOT'
 }
 
 processResources {
