@@ -46,7 +46,7 @@ public class CompatHelper {
 
 		if(Loader.isModLoaded("botania"))
 		{
-			return BotaniaHelper.extractMana(stack, player, maxExtract);
+//			return BotaniaHelper.extractMana(stack, player, maxExtract);
 		}
 		return 0;
 	}
@@ -55,7 +55,7 @@ public class CompatHelper {
 
 		if(Loader.isModLoaded("botania"))
 		{
-			return BotaniaHelper.dispatchMana(stack, player, dispatch);
+//			return BotaniaHelper.dispatchMana(stack, player, dispatch);
 		}
 		return 0;
 	}

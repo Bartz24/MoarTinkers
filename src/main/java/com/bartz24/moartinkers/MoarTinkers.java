@@ -1,5 +1,6 @@
 package com.bartz24.moartinkers;
 
+import com.bartz24.moartinkers.registry.ModMaterials;
 import org.apache.logging.log4j.Logger;
 
 import com.bartz24.moartinkers.proxy.CommonProxy;
@@ -27,7 +28,7 @@ import org.softc.armoryexpansion.common.integration.aelib.integration.JsonIntegr
 				"after:botania",
 		useMetadata = true,
 		guiFactory = "com.bartz24.moartinkers.config.ConfigGuiFactory")
-public class MoarTinkers {
+public class MoarTinkers extends JsonIntegration{
 	@SidedProxy(clientSide = "com.bartz24.moartinkers.proxy.ClientProxy", serverSide = "com.bartz24.moartinkers.proxy.ServerProxy")
 	private static CommonProxy proxy;
 
@@ -37,6 +38,7 @@ public class MoarTinkers {
 	private static Logger logger;
 
 	public MoarTinkers() {
+		super(References.ModID, References.ModID, References.ModID);
 	}
 
 	@Mod.EventHandler
@@ -55,6 +57,7 @@ public class MoarTinkers {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
+		ModMaterials.exportMaterialsFromCode(this.configDir + "/" + References.ModID + "/" + References.ModID + "-exported-materials.json");
 //		super.postInit(event);
 	}
 }

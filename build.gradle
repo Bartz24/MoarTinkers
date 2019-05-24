@@ -87,7 +87,7 @@ dependencies {
     compile files("lib/RedstoneFlux-1.12-2.0.1.2-universal.jar")
 
     //deobfCompile 'armory-expansion:armoryexpansion:1.3.0'
-    compile 'com.github.yaibatoken:Armory-Expansion:-SNAPSHOT'
+    compile 'com.github.yaibatoken:Armory-Expansion:master-SNAPSHOT'
 }
 
 processResources {

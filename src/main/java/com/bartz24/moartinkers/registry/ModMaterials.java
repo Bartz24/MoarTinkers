@@ -3,10 +3,13 @@ package com.bartz24.moartinkers.registry;
 import com.bartz24.moartinkers.MaterialIntegrationExists;
 import com.bartz24.moartinkers.MaterialIntegrationNoDust;
 import com.bartz24.moartinkers.MoarMaterialIntegration;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Tuple;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
+import org.softc.armoryexpansion.common.integration.aelib.plugins.constructs_armory.material.ArmorToolRangedMaterial;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.materials.MaterialTypes;
@@ -14,6 +17,13 @@ import slimeknights.tconstruct.library.traits.ITrait;
 import slimeknights.tconstruct.library.utils.HarvestLevels;
 import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.tools.TinkerTraits;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ModMaterials {
     static boolean force = false;
@@ -564,5 +574,43 @@ public class ModMaterials {
         material.addItemIngot("ingot" + name);
         force = false;
         return material;
+    }
+
+    public static void exportMaterialsFromCode(String path) {
+        writeJsonMaterials(generateJsonMaterials(), path);
+    }
+
+    private static void writeJsonMaterials(List<ArmorToolRangedMaterial> list, String path) {
+        Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
+        try {
+            Writer writer = new FileWriter(new File(path));
+            writer.write(gson.toJson(list.toArray()));
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static List<ArmorToolRangedMaterial> generateJsonMaterials(){
+        List<ArmorToolRangedMaterial> armorToolRangedMaterialList = new LinkedList<>();
+        for (MaterialRegistration material:materials) {
+            armorToolRangedMaterialList.add(generateMaterial(material));
+        }
+        return armorToolRangedMaterialList;
+    }
+
+    private static ArmorToolRangedMaterial generateMaterial(MaterialRegistration materialRegistration){
+        ArmorToolRangedMaterial armorToolRangedMaterial = new ArmorToolRangedMaterial(materialRegistration.identifier, materialRegistration.color);
+
+        for (Tuple<ITrait, String> trait: materialRegistration.traits) {
+            if(trait.getSecond().equals(null)){
+                armorToolRangedMaterial.addGlobalToolTrait(trait.getFirst().getIdentifier());
+            }
+            else {
+                armorToolRangedMaterial.addTrait(trait.getFirst().getIdentifier(), trait.getSecond());
+            }
+        }
+
+        return armorToolRangedMaterial;
     }
 }
