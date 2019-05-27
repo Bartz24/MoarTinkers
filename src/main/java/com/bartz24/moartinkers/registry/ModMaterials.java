@@ -9,6 +9,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Tuple;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
+import org.softc.armoryexpansion.client.integration.aelib.plugins.tinkers_construct.material.MaterialRenderType;
 import org.softc.armoryexpansion.common.integration.aelib.plugins.constructs_armory.material.ArmorToolRangedMaterial;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.Material;
@@ -583,7 +584,9 @@ public class ModMaterials {
     private static void writeJsonMaterials(List<ArmorToolRangedMaterial> list, String path) {
         Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
         try {
-            Writer writer = new FileWriter(new File(path));
+            File file = new File (path);
+            file.getParentFile().mkdirs();
+            Writer writer = new FileWriter(file);
             writer.write(gson.toJson(list.toArray()));
             writer.close();
         } catch (IOException e) {
@@ -602,8 +605,22 @@ public class ModMaterials {
     private static ArmorToolRangedMaterial generateMaterial(MaterialRegistration materialRegistration){
         ArmorToolRangedMaterial armorToolRangedMaterial = new ArmorToolRangedMaterial(materialRegistration.identifier, materialRegistration.color);
 
+        armorToolRangedMaterial.setType(MaterialRenderType.METAL);
+
+        armorToolRangedMaterial.setHeadMaterialStats(materialRegistration.head);
+        armorToolRangedMaterial.setHandleMaterialStats(materialRegistration.handle);
+        armorToolRangedMaterial.setExtraMaterialStats(materialRegistration.extra);
+
+        armorToolRangedMaterial.setBowMaterialStats(materialRegistration.bow);
+        armorToolRangedMaterial.setBowStringMaterialStats(materialRegistration.bowstring);
+
+
+        boolean craftNotCast = materialRegistration.castItem != null || materialRegistration.castItemOre != null;
+        armorToolRangedMaterial.setCraftable(craftNotCast);
+        armorToolRangedMaterial.setCastable(!craftNotCast);
+
         for (Tuple<ITrait, String> trait: materialRegistration.traits) {
-            if(trait.getSecond().equals(null)){
+            if(trait.getSecond() == null){
                 armorToolRangedMaterial.addGlobalToolTrait(trait.getFirst().getIdentifier());
             }
             else {
