@@ -2,7 +2,7 @@ buildscript {
     repositories {
         jcenter()
         maven { url = "http://files.minecraftforge.net/maven" }
-//        maven { url = "https://jitpack.io" }
+        maven { url = "https://jitpack.io" }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
@@ -86,7 +86,7 @@ dependencies {
 
     compile files("lib/RedstoneFlux-1.12-2.0.1.2-universal.jar")
     
-    compile 'com.github.YaibaToKen:Armory-Expansion:material-partial-disable-SNAPSHOT'
+    compile 'com.github.YaibaToKen:Armory-Expansion:master-SNAPSHOT'
 }
 
 processResources {
