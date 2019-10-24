@@ -23,7 +23,6 @@
       "materialType": "extra"
     },
     "identifier": "enderium",
-    "meta": 0,
     "color": 28257,
     "type": "METAL",
     "isCastable": true,
@@ -71,7 +70,6 @@
       "materialType": "extra"
     },
     "identifier": "platinum",
-    "meta": 0,
     "color": 3787514,
     "type": "METAL",
     "isCastable": true,
@@ -115,7 +113,6 @@
       "materialType": "extra"
     },
     "identifier": "iridium",
-    "meta": 0,
     "color": 15461355,
     "type": "METAL",
     "isCastable": true,
@@ -151,7 +148,6 @@
       "materialType": "extra"
     },
     "identifier": "mithril",
-    "meta": 0,
     "color": 2135472,
     "type": "METAL",
     "isCastable": true,
@@ -195,7 +191,6 @@
       "materialType": "extra"
     },
     "identifier": "signalum",
-    "meta": 0,
     "color": 15096592,
     "type": "METAL",
     "isCastable": true,
@@ -239,7 +234,6 @@
       "materialType": "extra"
     },
     "identifier": "lumium",
-    "meta": 0,
     "color": 16776368,
     "type": "METAL",
     "isCastable": true,
@@ -283,7 +277,6 @@
       "materialType": "extra"
     },
     "identifier": "constantan",
-    "meta": 0,
     "color": 14267210,
     "type": "METAL",
     "isCastable": true,
@@ -327,7 +320,6 @@
       "materialType": "extra"
     },
     "identifier": "invar",
-    "meta": 0,
     "color": 12895428,
     "type": "METAL",
     "isCastable": true,
@@ -375,7 +367,6 @@
       "materialType": "extra"
     },
     "identifier": "nickel",
-    "meta": 0,
     "color": -3615101,
     "type": "METAL",
     "isCastable": true,
@@ -411,7 +402,6 @@
       "materialType": "extra"
     },
     "identifier": "tin",
-    "meta": 0,
     "color": -4076068,
     "type": "METAL",
     "isCastable": true,
@@ -455,7 +445,6 @@
       "materialType": "extra"
     },
     "identifier": "brass",
-    "meta": 0,
     "color": -1186933,
     "type": "METAL",
     "isCastable": true,
@@ -486,7 +475,6 @@
       "materialType": "extra"
     },
     "identifier": "aluminum",
-    "meta": 0,
     "color": -1056555,
     "type": "METAL",
     "isCastable": true,
@@ -517,7 +505,6 @@
       "materialType": "extra"
     },
     "identifier": "zinc",
-    "meta": 0,
     "color": -2887704,
     "type": "METAL",
     "isCastable": true,
@@ -561,7 +548,6 @@
       "materialType": "extra"
     },
     "identifier": "refinedobsidian",
-    "meta": 0,
     "color": 7546472,
     "type": "METAL",
     "isCastable": true,
@@ -617,7 +603,6 @@
       "materialType": "extra"
     },
     "identifier": "refinedglowstone",
-    "meta": 0,
     "color": 15789097,
     "type": "METAL",
     "isCastable": true,
@@ -661,7 +646,6 @@
       "materialType": "extra"
     },
     "identifier": "osmium",
-    "meta": 0,
     "color": 8889855,
     "type": "METAL",
     "isCastable": true,
@@ -692,7 +676,6 @@
       "materialType": "extra"
     },
     "identifier": "manasteel",
-    "meta": 0,
     "color": 6480373,
     "type": "METAL",
     "isCastable": true,
@@ -736,7 +719,6 @@
       "materialType": "extra"
     },
     "identifier": "terrasteel",
-    "meta": 0,
     "color": 5171235,
     "type": "METAL",
     "isCastable": true,
@@ -780,7 +762,6 @@
       "materialType": "extra"
     },
     "identifier": "elvenelementium",
-    "meta": 0,
     "color": 15547352,
     "type": "METAL",
     "isCastable": true,
@@ -824,7 +805,6 @@
       "materialType": "extra"
     },
     "identifier": "gaia",
-    "meta": 0,
     "color": 9525173,
     "type": "METAL",
     "isCastable": true,
@@ -880,7 +860,6 @@
       "materialType": "extra"
     },
     "identifier": "yellorium",
-    "meta": 0,
     "color": 16447304,
     "type": "METAL",
     "isCastable": true,
@@ -924,7 +903,6 @@
       "materialType": "extra"
     },
     "identifier": "cyanite",
-    "meta": 0,
     "color": 2476507,
     "type": "METAL",
     "isCastable": true,
@@ -968,7 +946,6 @@
       "materialType": "extra"
     },
     "identifier": "blutonium",
-    "meta": 0,
     "color": 2693316,
     "type": "METAL",
     "isCastable": true,
@@ -1012,7 +989,6 @@
       "materialType": "extra"
     },
     "identifier": "ludicrite",
-    "meta": 0,
     "color": 13905108,
     "type": "METAL",
     "isCastable": true,
@@ -1043,7 +1019,6 @@
       "materialType": "extra"
     },
     "identifier": "quartzenrichediron",
-    "meta": 0,
     "color": 15132390,
     "type": "METAL",
     "isCastable": false,
@@ -1074,7 +1049,6 @@
       "materialType": "extra"
     },
     "identifier": "draconium",
-    "meta": 0,
     "color": 8007367,
     "type": "METAL",
     "isCastable": false,
@@ -1134,7 +1108,6 @@
       "materialType": "extra"
     },
     "identifier": "wyverndraconium",
-    "meta": 0,
     "color": 8007367,
     "type": "METAL",
     "isCastable": false,
@@ -1194,7 +1167,6 @@
       "materialType": "extra"
     },
     "identifier": "awakeneddraconium",
-    "meta": 0,
     "color": 16763177,
     "type": "METAL",
     "isCastable": false,
@@ -1254,7 +1226,6 @@
       "materialType": "extra"
     },
     "identifier": "chaoticdraconium",
-    "meta": 0,
     "color": 1513239,
     "type": "METAL",
     "isCastable": false,
@@ -1314,7 +1285,6 @@
       "materialType": "extra"
     },
     "identifier": "psi",
-    "meta": 0,
     "color": 2918601,
     "type": "METAL",
     "isCastable": true,
@@ -1358,7 +1328,6 @@
       "materialType": "extra"
     },
     "identifier": "psigem",
-    "meta": 0,
     "color": 846045,
     "type": "METAL",
     "isCastable": false,
@@ -1402,7 +1371,6 @@
       "materialType": "extra"
     },
     "identifier": "ivorypsi",
-    "meta": 0,
     "color": 2918601,
     "type": "METAL",
     "isCastable": true,
@@ -1427,34 +1395,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.64,
-      "range": 2.56,
-      "bonusDamage": 10.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1210,
-      "harvestLevel": 4,
-      "attack": 14.06,
-      "miningspeed": 11.76,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.98,
-      "durability": 400,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 290,
-      "materialType": "extra"
-    },
     "identifier": "ebonypsi",
-    "meta": 0,
-    "color": 657930,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": [
       {
         "traitName": "psieater",
@@ -1475,34 +1416,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.87,
-      "range": 3.54,
-      "bonusDamage": 8.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1200,
-      "harvestLevel": 4,
-      "attack": 9.04,
-      "miningspeed": 13.62,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.03,
-      "durability": 350,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 200,
-      "materialType": "extra"
-    },
     "identifier": "darkmatter",
-    "meta": 0,
-    "color": 2556211,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "darkness",
@@ -1523,34 +1437,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 2.98,
-      "range": 5.06,
-      "bonusDamage": 16.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1900,
-      "harvestLevel": 4,
-      "attack": 15.07,
-      "miningspeed": 16.74,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 3.86,
-      "durability": 500,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 500,
-      "materialType": "extra"
-    },
     "identifier": "redmatter",
-    "meta": 0,
-    "color": 14876672,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "weee",
@@ -1559,34 +1446,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 2.26,
-      "range": 3.41,
-      "bonusDamage": 8.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1100,
-      "harvestLevel": 4,
-      "attack": 14.06,
-      "miningspeed": 13.52,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.43,
-      "durability": 240,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 230,
-      "materialType": "extra"
-    },
     "identifier": "electrumflux",
-    "meta": 0,
-    "color": 16774507,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": [
       {
         "traitName": "energyrepair",
@@ -1607,220 +1467,31 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.56,
-      "range": 1.45,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 450,
-      "harvestLevel": 3,
-      "attack": 9.53,
-      "miningspeed": 7.86,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.23,
-      "durability": 140,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 120,
-      "materialType": "extra"
-    },
     "identifier": "refinediron",
-    "meta": 0,
-    "color": 14737632,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.98,
-      "range": 5.17,
-      "bonusDamage": 9.5,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 680,
-      "harvestLevel": 4,
-      "attack": 11.52,
-      "miningspeed": 8.42,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.73,
-      "durability": 220,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 115,
-      "materialType": "extra"
-    },
     "identifier": "tungsten",
-    "meta": 0,
-    "color": 4605529,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.65,
-      "range": 4.12,
-      "bonusDamage": 13.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1120,
-      "harvestLevel": 4,
-      "attack": 14.53,
-      "miningspeed": 8.97,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.42,
-      "durability": 320,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 200,
-      "materialType": "extra"
-    },
     "identifier": "tungsten",
-    "meta": 0,
-    "color": 4605529,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.0,
-      "range": 3.52,
-      "bonusDamage": 7.6,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 590,
-      "harvestLevel": 4,
-      "attack": 10.41,
-      "miningspeed": 7.63,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.52,
-      "durability": 180,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 95,
-      "materialType": "extra"
-    },
     "identifier": "titanium",
-    "meta": 0,
-    "color": 12237498,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.52,
-      "range": 2.15,
-      "bonusDamage": 5.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 800,
-      "harvestLevel": 4,
-      "attack": 7.83,
-      "miningspeed": 9.16,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.74,
-      "durability": 250,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 140,
-      "materialType": "extra"
-    },
     "identifier": "chrome",
-    "meta": 0,
-    "color": 14079702,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.75,
-      "range": 0.98,
-      "bonusDamage": 16.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1600,
-      "harvestLevel": 4,
-      "attack": 13.23,
-      "miningspeed": 13.63,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.85,
-      "durability": 400,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 500,
-      "materialType": "extra"
-    },
     "identifier": "advancedalloy",
-    "meta": 0,
-    "color": 16759720,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.97,
-      "range": 2.26,
-      "bonusDamage": 6.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 600,
-      "harvestLevel": 3,
-      "attack": 6.84,
-      "miningspeed": 10.12,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.74,
-      "durability": 100,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 80,
-      "materialType": "extra"
-    },
     "identifier": "ruby",
-    "meta": 0,
-    "color": 13565952,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "reflect",
@@ -1829,34 +1500,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.97,
-      "range": 2.26,
-      "bonusDamage": 6.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 600,
-      "harvestLevel": 3,
-      "attack": 6.84,
-      "miningspeed": 10.12,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.74,
-      "durability": 100,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 80,
-      "materialType": "extra"
-    },
     "identifier": "sapphire",
-    "meta": 0,
-    "color": 734166,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "launch",
@@ -1865,34 +1509,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.97,
-      "range": 2.26,
-      "bonusDamage": 6.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 600,
-      "harvestLevel": 3,
-      "attack": 6.84,
-      "miningspeed": 10.12,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.74,
-      "durability": 100,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 80,
-      "materialType": "extra"
-    },
     "identifier": "peridot",
-    "meta": 0,
-    "color": 1435701,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "shock",
@@ -1901,34 +1518,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.67,
-      "range": 2.41,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 800,
-      "harvestLevel": 3,
-      "attack": 7.42,
-      "miningspeed": 11.54,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.82,
-      "durability": 120,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 95,
-      "materialType": "extra"
-    },
     "identifier": "yellowgarnet",
-    "meta": 0,
-    "color": 16119067,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "autosmelt",
@@ -1949,34 +1539,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.67,
-      "range": 2.41,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 800,
-      "harvestLevel": 3,
-      "attack": 7.42,
-      "miningspeed": 11.54,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.82,
-      "durability": 120,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 95,
-      "materialType": "extra"
-    },
     "identifier": "redgarnet",
-    "meta": 0,
-    "color": 15541284,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "healer",
@@ -1985,38 +1548,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 6.42,
-      "range": 1.42,
-      "bonusDamage": 0.3,
-      "materialType": "bow"
-    },
-    "bowStringMaterialStats": {
-      "modifier": 2.65,
-      "materialType": "bowstring"
-    },
-    "headMaterialStats": {
-      "durability": 14,
-      "harvestLevel": 1,
-      "attack": 0.12,
-      "miningspeed": 0.95,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.87,
-      "durability": 10,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 3,
-      "materialType": "extra"
-    },
     "identifier": "rubber",
-    "meta": 0,
-    "color": 6049615,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "sling",
@@ -2033,34 +1565,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 2.31,
-      "range": 1.23,
-      "bonusDamage": 12.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 490,
-      "harvestLevel": 1,
-      "attack": 10.45,
-      "miningspeed": 7.45,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.74,
-      "durability": 30,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 26,
-      "materialType": "extra"
-    },
     "identifier": "certus",
-    "meta": 0,
-    "color": 13427952,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
         "traitName": "shocking",
@@ -2077,34 +1582,7 @@
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 2.87,
-      "range": 4.53,
-      "bonusDamage": 14.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 680,
-      "harvestLevel": 2,
-      "attack": 12.65,
-      "miningspeed": 13.32,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.45,
-      "durability": 10,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 40,
-      "materialType": "extra"
-    },
     "identifier": "fluix",
-    "meta": 0,
-    "color": 11554526,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": []
   }
 ]

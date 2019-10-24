@@ -1,0 +1,452 @@
+[
+  {
+    "identifier": "enderium",
+    "entries": [
+      {
+        "itemName": "ingotenderium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "platinum",
+    "entries": [
+      {
+        "itemName": "ingotplatinum",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "iridium",
+    "entries": [
+      {
+        "itemName": "ingotiridium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "mithril",
+    "entries": [
+      {
+        "itemName": "ingotmithril",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "signalum",
+    "entries": [
+      {
+        "itemName": "ingotsignalum",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "lumium",
+    "entries": [
+      {
+        "itemName": "ingotlumium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "constantan",
+    "entries": [
+      {
+        "itemName": "ingotconstantan",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "invar",
+    "entries": [
+      {
+        "itemName": "ingotinvar",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "nickel",
+    "entries": [
+      {
+        "itemName": "ingotnickel",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "tin",
+    "entries": [
+      {
+        "itemName": "ingottin",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "brass",
+    "entries": [
+      {
+        "itemName": "ingotbrass",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "aluminum",
+    "entries": [
+      {
+        "itemName": "ingotaluminum",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "zinc",
+    "entries": [
+      {
+        "itemName": "ingotzinc",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "refinedobsidian",
+    "entries": [
+      {
+        "itemName": "ingotrefinedobsidian",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "refinedglowstone",
+    "entries": [
+      {
+        "itemName": "ingotrefinedglowstone",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "osmium",
+    "entries": [
+      {
+        "itemName": "ingotosmium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "manasteel",
+    "entries": [
+      {
+        "itemName": "ingotmanasteel",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "terrasteel",
+    "entries": [
+      {
+        "itemName": "ingotterrasteel",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "elvenelementium",
+    "entries": [
+      {
+        "itemName": "ingotelvenelementium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "gaia",
+    "entries": [
+      {
+        "itemName": "ingotgaia",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "yellorium",
+    "entries": [
+      {
+        "itemName": "ingotyellorium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "cyanite",
+    "entries": [
+      {
+        "itemName": "ingotcyanite",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "blutonium",
+    "entries": [
+      {
+        "itemName": "ingotblutonium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "ludicrite",
+    "entries": [
+      {
+        "itemName": "ingotludicrite",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "quartzenrichediron",
+    "entries": [
+      {
+        "itemName": "ingotquartzenrichediron",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "draconium",
+    "entries": [
+      {
+        "itemName": "ingotdraconium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "wyverndraconium",
+    "entries": [
+      {
+        "itemName": "ingotwyverndraconium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "awakeneddraconium",
+    "entries": [
+      {
+        "itemName": "ingotawakeneddraconium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "chaoticdraconium",
+    "entries": [
+      {
+        "itemName": "ingotchaoticdraconium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "psi",
+    "entries": [
+      {
+        "itemName": "ingotpsi",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "psigem",
+    "entries": [
+      {
+        "itemName": "ingotpsigem",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "ivorypsi",
+    "entries": [
+      {
+        "itemName": "ingotivorypsi",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "ebonypsi",
+    "entries": [
+      {
+        "itemName": "ingotebonypsi",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "darkmatter",
+    "entries": [
+      {
+        "itemName": "ingotdarkmatter",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "redmatter",
+    "entries": [
+      {
+        "itemName": "ingotredmatter",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "electrumflux",
+    "entries": [
+      {
+        "itemName": "ingotelectrumflux",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "refinediron",
+    "entries": [
+      {
+        "itemName": "ingotrefinediron",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "tungsten",
+    "entries": [
+      {
+        "itemName": "ingottungsten",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "tungsten",
+    "entries": [
+      {
+        "itemName": "ingottungsten",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "titanium",
+    "entries": [
+      {
+        "itemName": "ingottitanium",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "chrome",
+    "entries": [
+      {
+        "itemName": "ingotchrome",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "advancedalloy",
+    "entries": [
+      {
+        "itemName": "ingotadvancedalloy",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "ruby",
+    "entries": [
+      {
+        "itemName": "ingotruby",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "sapphire",
+    "entries": [
+      {
+        "itemName": "ingotsapphire",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "peridot",
+    "entries": [
+      {
+        "itemName": "ingotperidot",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "yellowgarnet",
+    "entries": [
+      {
+        "itemName": "ingotyellowgarnet",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "redgarnet",
+    "entries": [
+      {
+        "itemName": "ingotredgarnet",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "rubber",
+    "entries": [
+      {
+        "itemName": "ingotrubber",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "certus",
+    "entries": [
+      {
+        "itemName": "ingotcertus",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "fluix",
+    "entries": [
+      {
+        "itemName": "ingotfluix",
+        "meta": 0
+      }
+    ]
+  }
+]

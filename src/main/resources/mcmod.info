@@ -3,14 +3,13 @@
   "modid": "moartinkers",
   "name": "Moar Tinkers",
   "description": "Adds moar tinker materials and traits!",
-  "version": "0.6.0",
+  "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/moar-tinkers",
   "updateUrl": "",
-  "authorList": ["Bartz24"],
-  "credits": "Boni for Tinkers Construct 2. YaibaToKen for a rewrite!",
+  "authorList": ["Bartz24", "YaibaToKen"],
+  "credits": "Boni for Tinkers Construct 2. YaibaToKen for a rewrite! The MMDLib Team and MMD Community for all the help given and code bits provided.",
   "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+  "screenshots": []
 }
 ]

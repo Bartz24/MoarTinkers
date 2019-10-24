@@ -25,9 +25,6 @@ import org.softc.armoryexpansion.common.integration.aelib.integration.JsonIntegr
 		useMetadata = true,
 		guiFactory = "com.bartz24.moartinkers.config.ConfigGuiFactory")
 public class MoarTinkers extends JsonIntegration{
-//	@SidedProxy(clientSide = "com.bartz24.moartinkers.proxy.ClientProxy", serverSide = "com.bartz24.moartinkers.proxy.ServerProxy")
-//	private static CommonProxy proxy;
-
 	public MoarTinkers() {
 		super(References.ModID, References.ModID, References.ModID);
 	}
@@ -36,21 +33,18 @@ public class MoarTinkers extends JsonIntegration{
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
 		this.configDir = event.getModConfigurationDirectory().getPath();
-//		proxy.preInit(event);
 		new ModTraits();
 		super.preInit(event);
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-//		proxy.init(event);
 		ModAlloys.init();
 		super.init(event);
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-//		ModMaterials.exportMaterialsFromCode(this.configDir + "/" + References.ModID + "/" + References.ModID + "-exported-materials.json");
 		super.postInit(event);
 	}
 }
