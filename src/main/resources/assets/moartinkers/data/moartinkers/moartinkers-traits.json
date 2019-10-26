@@ -1,1417 +1,257 @@
 [
   {
-    "bowMaterialStats": {
-      "drawspeed": 1.22,
-      "range": 1.1,
-      "bonusDamage": 5.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1020,
-      "harvestLevel": 4,
-      "attack": 10.19,
-      "miningspeed": 8.31,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.42,
-      "durability": 600,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 60,
-      "materialType": "extra"
-    },
-    "identifier": "enderium",
-    "color": 28257,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "enderference",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "enderference",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "enderference",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "endermagnetic",
-        "traitPart": "head"
-      }
-    ]
+    "identifier": "fluix",
+    "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.67,
-      "range": 0.6,
-      "bonusDamage": 3.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1410,
-      "harvestLevel": 3,
-      "attack": 7.39,
-      "miningspeed": 9.47,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.78,
-      "durability": 600,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 120,
-      "materialType": "extra"
-    },
     "identifier": "platinum",
-    "color": 3787514,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": [
       {
-        "traitName": "dense",
+        "traitNames": [
+          "dense"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "dense",
+        "traitNames": [
+          "dense"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "dense",
+        "traitNames": [
+          "dense"
+        ],
         "traitPart": "extra"
       }
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.23,
-      "range": 1.44,
-      "bonusDamage": 5.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1910,
-      "harvestLevel": 3,
-      "attack": 9.95,
-      "miningspeed": 11.02,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.83,
-      "durability": 500,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 200,
-      "materialType": "extra"
-    },
-    "identifier": "iridium",
-    "color": 15461355,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "weee",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.87,
-      "range": 1.23,
-      "bonusDamage": 3.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1160,
-      "harvestLevel": 4,
-      "attack": 7.03,
-      "miningspeed": 13.02,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.49,
-      "durability": 200,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 30,
-      "materialType": "extra"
-    },
-    "identifier": "mithril",
-    "color": 2135472,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "sos",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "sos",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "sos",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 3.24,
-      "range": 0.78,
-      "bonusDamage": 3.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 740,
-      "harvestLevel": 3,
-      "attack": 6.37,
-      "miningspeed": 12.42,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.52,
-      "durability": 100,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 40,
-      "materialType": "extra"
-    },
-    "identifier": "signalum",
-    "color": 15096592,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "unnatural",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "unnatural",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "unnatural",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.89,
-      "range": 2.36,
-      "bonusDamage": 9.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 600,
-      "harvestLevel": 3,
-      "attack": 8.34,
-      "miningspeed": 0.6,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.44,
-      "durability": 90,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 20,
-      "materialType": "extra"
-    },
-    "identifier": "lumium",
-    "color": 16776368,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "lightboost",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "lightboost",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "lightboost",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.31,
-      "range": 1.43,
-      "bonusDamage": 4.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 300,
-      "harvestLevel": 2,
-      "attack": 5.03,
-      "miningspeed": 4.45,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.34,
-      "durability": 135,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 13,
-      "materialType": "extra"
-    },
-    "identifier": "constantan",
-    "color": 14267210,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "constant",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "constant",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "constant",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.92,
-      "range": 0.76,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 700,
-      "harvestLevel": 2,
-      "attack": 6.22,
-      "miningspeed": 7.22,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.64,
-      "durability": 220,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 32,
-      "materialType": "extra"
-    },
-    "identifier": "invar",
-    "color": 12895428,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "magnetic1",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "magnetic1",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "magnetic1",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "magnetic2",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.92,
-      "range": 0.76,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 20,
-      "harvestLevel": 1,
-      "attack": 5.1,
-      "miningspeed": 3.63,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.14,
-      "durability": 30,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 7,
-      "materialType": "extra"
-    },
-    "identifier": "nickel",
-    "color": -3615101,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "exploit",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.59,
-      "range": 0.87,
-      "bonusDamage": 1.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 300,
-      "harvestLevel": 1,
-      "attack": 2.27,
-      "miningspeed": 1.85,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.34,
-      "durability": 120,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 40,
-      "materialType": "extra"
-    },
-    "identifier": "tin",
-    "color": -4076068,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "sos",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "sos",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "sos",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.32,
-      "range": 1.63,
-      "bonusDamage": 3.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 260,
-      "harvestLevel": 1,
-      "attack": 1.76,
-      "miningspeed": 2.98,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.11,
-      "durability": 10,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 4,
-      "materialType": "extra"
-    },
-    "identifier": "brass",
-    "color": -1186933,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
+    "identifier": "tungsten",
     "traits": []
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 0.21,
-      "range": 0.34,
-      "bonusDamage": 0.6,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 80,
-      "harvestLevel": 1,
-      "attack": 0.85,
-      "miningspeed": 1.23,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.21,
-      "durability": -20,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": -10,
-      "materialType": "extra"
-    },
-    "identifier": "aluminum",
-    "color": -1056555,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": []
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.32,
-      "range": 0.43,
-      "bonusDamage": 0.4,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 40,
-      "harvestLevel": 1,
-      "attack": 0.53,
-      "miningspeed": 1.76,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.19,
-      "durability": -25,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": -12,
-      "materialType": "extra"
-    },
-    "identifier": "zinc",
-    "color": -2887704,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "crumbling",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "crumbling",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "crumbling",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.11,
-      "range": 0.43,
-      "bonusDamage": 12.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1400,
-      "harvestLevel": 4,
-      "attack": 11.04,
-      "miningspeed": 5.24,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.19,
-      "durability": 400,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 340,
-      "materialType": "extra"
-    },
-    "identifier": "refinedobsidian",
-    "color": 7546472,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "duritos",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "duritos",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "duritos",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "darkness",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "darkness",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "darkness",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.31,
-      "range": 1.99,
-      "bonusDamage": 8.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 900,
-      "harvestLevel": 3,
-      "attack": 8.88,
-      "miningspeed": 9.43,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.84,
-      "durability": 140,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 100,
-      "materialType": "extra"
-    },
-    "identifier": "refinedglowstone",
-    "color": 15789097,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "lightboost",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "lightboost",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "lightboost",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.98,
-      "range": 1.09,
-      "bonusDamage": 4.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 500,
-      "harvestLevel": 2,
-      "attack": 4.01,
-      "miningspeed": 3.73,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.19,
-      "durability": 98,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 48,
-      "materialType": "extra"
-    },
-    "identifier": "osmium",
-    "color": 8889855,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": []
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.33,
-      "range": 1.44,
-      "bonusDamage": 5.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 400,
-      "harvestLevel": 2,
-      "attack": 3.87,
-      "miningspeed": 6.21,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.07,
-      "durability": 120,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 71,
-      "materialType": "extra"
-    },
-    "identifier": "manasteel",
-    "color": 6480373,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "manarepair",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "manarepair",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "manarepair",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.76,
-      "range": 0.97,
-      "bonusDamage": 7.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 960,
-      "harvestLevel": 4,
-      "attack": 12.03,
-      "miningspeed": 9.53,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.45,
-      "durability": 200,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 136,
-      "materialType": "extra"
-    },
-    "identifier": "terrasteel",
-    "color": 5171235,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "manaeater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "manaeater",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "manaeater",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 4.01,
-      "range": 0.53,
-      "bonusDamage": 2.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 200,
-      "harvestLevel": 3,
-      "attack": 7.04,
-      "miningspeed": 8.01,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 3.01,
-      "durability": -50,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": -20,
-      "materialType": "extra"
-    },
-    "identifier": "elvenelementium",
-    "color": 15547352,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "manarepair",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "manarepair",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "manarepair",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.54,
-      "range": 6.45,
-      "bonusDamage": 15.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1600,
-      "harvestLevel": 4,
-      "attack": 19.62,
-      "miningspeed": 14.52,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.63,
-      "durability": 260,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 180,
-      "materialType": "extra"
-    },
-    "identifier": "gaia",
-    "color": 9525173,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "alien",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "alien",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "alien",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "payback",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "payback",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "payback",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.97,
-      "range": 0.79,
-      "bonusDamage": 3.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 660,
-      "harvestLevel": 2,
-      "attack": 5.08,
-      "miningspeed": 7.52,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 0.76,
-      "durability": -40,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": -20,
-      "materialType": "extra"
-    },
-    "identifier": "yellorium",
-    "color": 16447304,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "radioactive2",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "radioactive2",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "radioactive2",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.51,
-      "range": 1.11,
-      "bonusDamage": 8.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 300,
-      "harvestLevel": 3,
-      "attack": 4.83,
-      "miningspeed": 6.53,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.53,
-      "durability": 20,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 60,
-      "materialType": "extra"
-    },
-    "identifier": "cyanite",
-    "color": 2476507,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "radioactive1",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "radioactive1",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "radioactive1",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.25,
-      "range": 1.02,
-      "bonusDamage": 12.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 800,
-      "harvestLevel": 4,
-      "attack": 6.23,
-      "miningspeed": 8.09,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.06,
-      "durability": 90,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 50,
-      "materialType": "extra"
-    },
     "identifier": "blutonium",
-    "color": 2693316,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
     "traits": [
       {
-        "traitName": "radioactive3",
+        "traitNames": [
+          "radioactive3"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "radioactive3",
+        "traitNames": [
+          "radioactive3"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "radioactive3",
+        "traitNames": [
+          "radioactive3"
+        ],
         "traitPart": "extra"
       }
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 4.52,
-      "range": 3.21,
-      "bonusDamage": 13.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1400,
-      "harvestLevel": 4,
-      "attack": 12.42,
-      "miningspeed": 11.21,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.34,
-      "durability": 400,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 300,
-      "materialType": "extra"
-    },
-    "identifier": "ludicrite",
-    "color": 13905108,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": []
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 0.64,
-      "range": 0.86,
-      "bonusDamage": 4.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 500,
-      "harvestLevel": 3,
-      "attack": 6.83,
-      "miningspeed": 7.65,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.22,
-      "durability": 140,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 70,
-      "materialType": "extra"
-    },
-    "identifier": "quartzenrichediron",
-    "color": 15132390,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
-    "traits": []
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.56,
-      "range": 1.62,
-      "bonusDamage": 10.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1400,
-      "harvestLevel": 4,
-      "attack": 13.53,
-      "miningspeed": 12.04,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.86,
-      "durability": 400,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 300,
-      "materialType": "extra"
-    },
-    "identifier": "draconium",
-    "color": 8007367,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
+    "identifier": "manasteel",
     "traits": [
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "manarepair"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "manarepair"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "energyrepair",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "energyeater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "op1",
+        "traitNames": [
+          "manarepair"
+        ],
         "traitPart": "extra"
       }
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 4.06,
-      "range": 2.98,
-      "bonusDamage": 14.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 1700,
-      "harvestLevel": 5,
-      "attack": 19.76,
-      "miningspeed": 16.35,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 2.76,
-      "durability": 600,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 450,
-      "materialType": "extra"
-    },
-    "identifier": "wyverndraconium",
-    "color": 8007367,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
+    "identifier": "rubber",
     "traits": [
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "sling"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "sling"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "energyrepair",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "energyeater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "op1",
+        "traitNames": [
+          "sling"
+        ],
         "traitPart": "extra"
       }
     ]
   },
   {
-    "bowMaterialStats": {
-      "drawspeed": 5.6,
-      "range": 3.76,
-      "bonusDamage": 20.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 2000,
-      "harvestLevel": 6,
-      "attack": 29.52,
-      "miningspeed": 25.43,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 3.12,
-      "durability": 800,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 600,
-      "materialType": "extra"
-    },
+    "identifier": "tin",
+    "traits": [
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "redgarnet",
+    "traits": [
+      {
+        "traitNames": [
+          "healer"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "invar",
+    "traits": [
+      {
+        "traitNames": [
+          "magnetic1"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "magnetic1"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "magnetic1"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "magnetic2"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "refinedglowstone",
+    "traits": [
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "cyanite",
+    "traits": [
+      {
+        "traitNames": [
+          "radioactive1"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "radioactive1"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "radioactive1"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
     "identifier": "awakeneddraconium",
-    "color": 16763177,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
     "traits": [
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "extra"
       },
       {
-        "traitName": "energyeater",
+        "traitNames": [
+          "energyeater"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "op1",
+        "traitNames": [
+          "op1"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "op1",
+        "traitNames": [
+          "op1"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "op1",
+        "traitNames": [
+          "op1"
+        ],
         "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 8.96,
-      "range": 5.14,
-      "bonusDamage": 800.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 3000,
-      "harvestLevel": 7,
-      "attack": 1400.76,
-      "miningspeed": 32.73,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 5.31,
-      "durability": 1200,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 1000,
-      "materialType": "extra"
-    },
-    "identifier": "chaoticdraconium",
-    "color": 1513239,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
-    "traits": [
-      {
-        "traitName": "energyrepair",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "energyrepair",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "energyrepair",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "energyeater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "op1",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.45,
-      "range": 1.26,
-      "bonusDamage": 5.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 450,
-      "harvestLevel": 3,
-      "attack": 8.01,
-      "miningspeed": 9.04,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.12,
-      "durability": 140,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 80,
-      "materialType": "extra"
-    },
-    "identifier": "psi",
-    "color": 2918601,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "psirepair",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "psirepair",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "psirepair",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 1.21,
-      "range": 0.85,
-      "bonusDamage": 4.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 800,
-      "harvestLevel": 3,
-      "attack": 7.12,
-      "miningspeed": 8.25,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.54,
-      "durability": 100,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 100,
-      "materialType": "extra"
-    },
-    "identifier": "psigem",
-    "color": 846045,
-    "type": "METAL",
-    "isCastable": false,
-    "isCraftable": true,
-    "traits": [
-      {
-        "traitName": "psieater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "psieater",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "psieater",
-        "traitPart": "extra"
-      }
-    ]
-  },
-  {
-    "bowMaterialStats": {
-      "drawspeed": 2.74,
-      "range": 1.75,
-      "bonusDamage": 6.0,
-      "materialType": "bow"
-    },
-    "headMaterialStats": {
-      "durability": 980,
-      "harvestLevel": 4,
-      "attack": 11.07,
-      "miningspeed": 14.06,
-      "materialType": "head"
-    },
-    "handleMaterialStats": {
-      "modifier": 1.53,
-      "durability": 300,
-      "materialType": "handle"
-    },
-    "extraMaterialStats": {
-      "extraDurability": 170,
-      "materialType": "extra"
-    },
-    "identifier": "ivorypsi",
-    "color": 2918601,
-    "type": "METAL",
-    "isCastable": true,
-    "isCraftable": false,
-    "traits": [
-      {
-        "traitName": "psirepair",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "psirepair",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "psirepair",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "holy",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "ebonypsi",
-    "traits": [
-      {
-        "traitName": "psieater",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "psieater",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "psieater",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "darkness",
-        "traitPart": "head"
       }
     ]
   },
@@ -1419,19 +259,588 @@
     "identifier": "darkmatter",
     "traits": [
       {
-        "traitName": "darkness",
+        "traitNames": [
+          "darkness"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "darkness",
+        "traitNames": [
+          "darkness"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "darkness",
+        "traitNames": [
+          "darkness"
+        ],
         "traitPart": "extra"
       },
       {
-        "traitName": "instantdeath1",
+        "traitNames": [
+          "instantdeath1"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "zinc",
+    "traits": [
+      {
+        "traitNames": [
+          "crumbling"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "crumbling"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "crumbling"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "ivorypsi",
+    "traits": [
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "holy"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "terrasteel",
+    "traits": [
+      {
+        "traitNames": [
+          "manaeater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "manaeater"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "manaeater"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "yellorium",
+    "traits": [
+      {
+        "traitNames": [
+          "radioactive2"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "radioactive2"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "radioactive2"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "sapphire",
+    "traits": [
+      {
+        "traitNames": [
+          "launch"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "advancedalloy",
+    "traits": []
+  },
+  {
+    "identifier": "chrome",
+    "traits": []
+  },
+  {
+    "identifier": "brass",
+    "traits": []
+  },
+  {
+    "identifier": "draconium",
+    "traits": [
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "energyeater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "ludicrite",
+    "traits": []
+  },
+  {
+    "identifier": "refinediron",
+    "traits": []
+  },
+  {
+    "identifier": "yellowgarnet",
+    "traits": [
+      {
+        "traitNames": [
+          "autosmelt"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "autosmelt"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "autosmelt"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "superheat"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "mithril",
+    "traits": [
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "sos"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "gaia",
+    "traits": [
+      {
+        "traitNames": [
+          "alien"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "alien"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "alien"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "payback"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "payback"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "payback"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "chaoticdraconium",
+    "traits": [
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "energyeater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "ebonypsi",
+    "traits": [
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "darkness"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "titanium",
+    "traits": []
+  },
+  {
+    "identifier": "psi",
+    "traits": [
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "psirepair"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "refinedobsidian",
+    "traits": [
+      {
+        "traitNames": [
+          "duritos"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "duritos"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "duritos"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "darkness"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "darkness"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "darkness"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "aluminum",
+    "traits": []
+  },
+  {
+    "identifier": "iridium",
+    "traits": [
+      {
+        "traitNames": [
+          "weee"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "lumium",
+    "traits": [
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "lightboost"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "enderium",
+    "traits": [
+      {
+        "traitNames": [
+          "enderference"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "enderference"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "enderference"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "endermagnetic"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "signalum",
+    "traits": [
+      {
+        "traitNames": [
+          "unnatural"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "unnatural"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "unnatural"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "wyverndraconium",
+    "traits": [
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "energyrepair"
+        ],
+        "traitPart": "extra"
+      },
+      {
+        "traitNames": [
+          "energyeater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "op1"
+        ],
+        "traitPart": "extra"
+      }
+    ]
+  },
+  {
+    "identifier": "peridot",
+    "traits": [
+      {
+        "traitNames": [
+          "shock"
+        ],
         "traitPart": "head"
       }
     ]
@@ -1440,7 +849,20 @@
     "identifier": "redmatter",
     "traits": [
       {
-        "traitName": "weee",
+        "traitNames": [
+          "weee"
+        ],
+        "traitPart": "head"
+      }
+    ]
+  },
+  {
+    "identifier": "nickel",
+    "traits": [
+      {
+        "traitNames": [
+          "exploit"
+        ],
         "traitPart": "head"
       }
     ]
@@ -1449,118 +871,112 @@
     "identifier": "electrumflux",
     "traits": [
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "extra"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "energyrepair",
+        "traitNames": [
+          "energyrepair"
+        ],
         "traitPart": "shaft"
       },
       {
-        "traitName": "energyeater",
+        "traitNames": [
+          "energyeater"
+        ],
         "traitPart": "head"
       }
     ]
   },
   {
-    "identifier": "refinediron",
+    "identifier": "osmium",
     "traits": []
   },
   {
-    "identifier": "tungsten",
-    "traits": []
+    "identifier": "elvenelementium",
+    "traits": [
+      {
+        "traitNames": [
+          "manarepair"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "manarepair"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "manarepair"
+        ],
+        "traitPart": "extra"
+      }
+    ]
   },
   {
-    "identifier": "tungsten",
-    "traits": []
+    "identifier": "constantan",
+    "traits": [
+      {
+        "traitNames": [
+          "constant"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "constant"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "constant"
+        ],
+        "traitPart": "extra"
+      }
+    ]
   },
   {
-    "identifier": "titanium",
-    "traits": []
-  },
-  {
-    "identifier": "chrome",
-    "traits": []
-  },
-  {
-    "identifier": "advancedalloy",
-    "traits": []
+    "identifier": "psigem",
+    "traits": [
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "head"
+      },
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "handle"
+      },
+      {
+        "traitNames": [
+          "psieater"
+        ],
+        "traitPart": "extra"
+      }
+    ]
   },
   {
     "identifier": "ruby",
     "traits": [
       {
-        "traitName": "reflect",
+        "traitNames": [
+          "reflect"
+        ],
         "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "sapphire",
-    "traits": [
-      {
-        "traitName": "launch",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "peridot",
-    "traits": [
-      {
-        "traitName": "shock",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "yellowgarnet",
-    "traits": [
-      {
-        "traitName": "autosmelt",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "autosmelt",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "autosmelt",
-        "traitPart": "extra"
-      },
-      {
-        "traitName": "superheat",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "redgarnet",
-    "traits": [
-      {
-        "traitName": "healer",
-        "traitPart": "head"
-      }
-    ]
-  },
-  {
-    "identifier": "rubber",
-    "traits": [
-      {
-        "traitName": "sling",
-        "traitPart": "head"
-      },
-      {
-        "traitName": "sling",
-        "traitPart": "handle"
-      },
-      {
-        "traitName": "sling",
-        "traitPart": "extra"
       }
     ]
   },
@@ -1568,21 +984,27 @@
     "identifier": "certus",
     "traits": [
       {
-        "traitName": "shocking",
+        "traitNames": [
+          "shocking"
+        ],
         "traitPart": "head"
       },
       {
-        "traitName": "shocking",
+        "traitNames": [
+          "shocking"
+        ],
         "traitPart": "handle"
       },
       {
-        "traitName": "shocking",
+        "traitNames": [
+          "shocking"
+        ],
         "traitPart": "extra"
       }
     ]
   },
   {
-    "identifier": "fluix",
+    "identifier": "quartzenrichediron",
     "traits": []
   }
 ]

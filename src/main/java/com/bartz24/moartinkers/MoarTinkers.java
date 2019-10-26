@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.softc.armoryexpansion.ArmoryExpansion;
-import org.softc.armoryexpansion.common.integration.aelib.integration.JsonIntegration;
+import org.softc.armoryexpansion.common.integration.aelib.integration.StandaloneJsonIntegration;
 
 @Mod(
 		modid = References.ModID,
@@ -24,7 +24,7 @@ import org.softc.armoryexpansion.common.integration.aelib.integration.JsonIntegr
 				"after:botania",
 		useMetadata = true,
 		guiFactory = "com.bartz24.moartinkers.config.ConfigGuiFactory")
-public class MoarTinkers extends JsonIntegration{
+public class MoarTinkers extends StandaloneJsonIntegration {
 	public MoarTinkers() {
 		super(References.ModID, References.ModID, References.ModID);
 	}
